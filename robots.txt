@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://automatecompare.com/sitemap.xml
+Crawl-delay: 10
