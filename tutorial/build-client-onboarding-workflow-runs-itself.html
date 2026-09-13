@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Build a Client Onboarding Workflow That Runs Itself | Automate Compare</title>
-    <meta name="description" content="Automate your client onboarding with CRM, email, payments, and Zapier. Step-by-step guide to build a self-running workflow that saves hours.">
-    <meta name="keywords" content="client onboarding automation, workflow automation, business processes, automate client onboarding">
+    <meta name="description" content="Learn how to automate your client onboarding process using workflow automation tools like Make and Zapier. Step-by-step guide with comparison table, pros/cons, ">
+    <meta name="keywords" content="client onboarding automation, workflow automation, business processes, Make vs Zapier, automated onboarding">
         <meta name="impact-site-verification" value="72e78125-83d8-4a51-b7db-e3ad7e2be67b">
     <link rel="canonical" href="https://automatecompare.com/tutorial/build-client-onboarding-workflow-runs-itself">
     <link rel="stylesheet" href="/style.css?v=20260804">
@@ -13,9 +13,9 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Build a Client Onboarding Workflow That Runs Itself",
-  "description": "Automate your client onboarding with CRM, email, payments, and Zapier. Step-by-step guide to build a self-running workflow that saves hours.",
-  "datePublished": "2026-08-04",
-  "dateModified": "2026-08-04",
+  "description": "Learn how to automate your client onboarding process using workflow automation tools like Make and Zapier. Step-by-step guide with comparison table, pros/cons, and verdict.",
+  "datePublished": "2026-09-11",
+  "dateModified": "2026-09-11",
   "author": {
     "@type": "Person",
     "name": "Editorial Team"
@@ -63,9 +63,9 @@
             <h1>How to Build a Client Onboarding Workflow That Runs Itself</h1>
             <div class="meta-row">
                 <span class="badge badge-tutorial">Tutorial</span>
-                <time datetime="2026-08-04">August 04, 2026</time>
+                <time datetime="2026-09-11">September 11, 2026</time>
                 <span>·</span>
-                <span class="reading-time">9 min read</span>
+                <span class="reading-time">7 min read</span>
                 <span class="affiliate-tag">🔄 Affiliate Links</span>
             </div>
         </header>
@@ -75,145 +75,118 @@
     <p>🔍 Want the best deal? Check current prices and availability.</p>
     <a href="https://automatecompare.com/#deals" class="cta-btn">Compare Prices →</a>
 </div>
-            <p><strong>When you buy through links on our site, we may earn a commission.</strong></p>
+            <p><em>When you buy through links on our site, we may earn a commission.</em></p>
 <hr>
-<p>You just landed a new client. Feels great, right? Then comes the dread: sending the contract, chasing signatures, setting up billing, forwarding a welcome packet, scheduling a kickoff call, and remembering to send that “here’s what to expect” email. It’s a lot of manual work that eats into your billable time.</p>
-<p>I’ve been there. Before I automated my own onboarding, I was spending two to three hours per new client just on admin tasks. Multiply that by dozens of clients a year, and you’re losing entire work weeks.</p>
-<p>The good news? You can build a client onboarding workflow that runs itself. Once set up, the system fires off emails, collects payments, sends contracts, and schedules meetings — all without you lifting a finger. In this tutorial, I’ll walk you through the exact steps to build your own automated onboarding pipeline using tools like <a href="https://hubspot.sjv.io/revenueclaw" rel="nofollow sponsored">Hubspot</a>, <a href="https://convertkit.com/?ref=revenueclaw" rel="nofollow sponsored">Convertkit</a>, Stripe, and Zapier.</p>
-<p>Let’s get your process on autopilot.</p>
+<p>You land a new client. The relief is real. Then the panic sets in.</p>
+<p>Now you have to send contracts, collect signatures, gather intake info, set up accounts, introduce them to your team, and schedule the kickoff call. That’s five separate tasks, each requiring a manual email or a login to a different app. One slip‑up and you look unprofessional.</p>
+<p>It doesn’t have to be this way. A well‑designed client onboarding workflow can handle most of these steps automatically, so you spend your time on the work you actually get paid for.</p>
+<p>In this tutorial, I’ll show you exactly how to build a self‑running onboarding workflow using <strong><a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a></strong> (formerly Integromat) – with a side‑by‑side comparison of the best automation platforms. By the end, you’ll have a system that sends a welcome sequence, creates project folders, and schedules your first meeting – all without you touching a <a href="https://www.amazon.com/dp/B09TMRCGNH?tag=automatecom-20&linkCode=ogi&th=1&psc=1" rel="nofollow sponsored">Keyboard</a> after the initial trigger.</p>
 <hr>
-<h2 id="prerequisites">Prerequisites</h2>
-<p>Before we start building, you’ll need a few tools in your stack. Don’t worry — most have free tiers or affordable starter plans.</p>
-<h3 id="what-you-ll-need">What you’ll need:</h3>
+<h2 id="what-makes-a-client-onboarding-workflow-run-itself">What Makes a Client Onboarding Workflow “Run Itself”?</h2>
+<p>Before we build, let’s define the pieces. A complete client onboarding automation needs:</p>
+<ul>
+<li><strong>A trigger event</strong> – new client signs up, pays a deposit, or fills a form.</li>
+<li><strong>Data capture</strong> – collect client details (name, email, project scope, etc.).</li>
+<li><strong>Document handling</strong> – send proposals, contracts, and invoices for e‑signature.</li>
+<li><strong>Task creation</strong> – create to‑do lists in your project management tool.</li>
+<li><strong>Communication</strong> – send personalised emails, Slack messages, or SMS.</li>
+<li><strong>Scheduling</strong> – book the kickoff call without back‑and‑forth.</li>
+</ul>
+<p>You can achieve all of this by chaining together a few apps with a workflow automation tool. The most popular options are <strong>Make</strong>, <strong>Zapier</strong>, and <strong>n8n</strong> (self‑hosted). For this tutorial I’ll use Make because it offers the best balance of power and price for small businesses.</p>
+<hr>
+<h2 id="what-you-ll-need">What You’ll Need</h2>
+<ul>
+<li>A <strong>Make</strong> account (free tier available, paid plans start at $9/month)</li>
+<li>A <strong>Typeform</strong> or <strong>Google Forms</strong> form to capture client info</li>
+<li>An e‑signature tool like <strong>PandaDoc</strong> or <strong>HelloSign</strong></li>
+<li>A project management tool (I’ll use <strong>Trello</strong>, but Asana or <a href="https://clickup.com/?fp_ref=revenueclaw" rel="nofollow sponsored">Clickup</a> work too)</li>
+<li>A <strong>Google Calendar</strong> or <strong>Calendly</strong> account for scheduling</li>
+<li>Optionally, a <strong>Slack</strong> workspace for internal notifications</li>
+</ul>
+<p>All of these integrate directly with Make, and I’ll show you the exact modules to use.</p>
+<hr>
+<h2 id="step-by-step-building-the-workflow-in-make">Step‑by‑Step: Building the Workflow in Make</h2>
+<p>I’ll walk through the most common onboarding flow. You can adapt it to your business.</p>
+<h3 id="step-1-the-trigger-new-client-signup">Step 1: The Trigger – New Client Signup</h3>
+<p>Create a new scenario in Make. Set the trigger module to <strong>Typeform – New Entry</strong>. Connect your form (e.g., “New Client Intake”). Every time someone submits the form, Make will start the workflow.</p>
+<p><em>Pro tip</em>: If you use a payment gateway like Stripe, trigger on a successful payment instead – that way you know the client has actually paid.</p>
+<h3 id="step-2-send-the-welcome-email-documents">Step 2: Send the Welcome Email + Documents</h3>
+<p>Add a <strong>Gmail – Send Email</strong> module. Use the client’s name and email from the trigger. Write a short welcome message that includes a link to your contract (hosted on PandaDoc or HelloSign). Better yet, use <strong>PandaDoc – Create Document</strong> to automatically generate the contract from a template, then send it for signature.</p>
+<p>Make can also wait for the signature event. Add a <strong>PandaDoc – Watch Document Status</strong> module that pauses the workflow until the document is signed.</p>
+<h3 id="step-3-create-project-folders-and-tasks">Step 3: Create Project Folders and Tasks</h3>
+<p>Once the contract is signed, add a <strong>Trello – Create Card</strong> module. Create a new card in your “Active Clients” list with the client’s name. Use the <strong>Trello – Add Checklist</strong> module to populate a standard onboarding checklist (e.g., “Set up email signature,” “Share credentials,” “Schedule kickoff”).</p>
+<p>You can do the same in Asana or ClickUp using their respective modules.</p>
+<h3 id="step-4-schedule-the-kickoff-call">Step 4: Schedule the Kickoff Call</h3>
+<p>Add a <strong>Calendly – Invitee Created</strong> module (or use <strong>Google Calendar – Create Event</strong> with the client’s timezone). If you use Calendly, you can embed a scheduling link in the earlier welcome email. Make can capture the chosen slot and automatically add it to your calendar and the client’s.</p>
+<h3 id="step-5-notify-your-team">Step 5: Notify Your Team</h3>
+<p>Finally, add a <strong>Slack – Send Message</strong> module to post a message in your #new-clients channel: “New client onboarded: {{client_name}}. Contract signed. Kickoff call on {{date}}.” Your team knows what to do next.</p>
+<p>That’s it – a fully automated onboarding sequence. The whole thing runs in about 2 minutes, and you only had to set it up once.</p>
+<hr>
+<h2 id="comparison-table-best-automation-platforms-for-client-onboarding">Comparison Table: Best Automation Platforms for Client Onboarding</h2>
+<p>Not sure whether to use Make, Zapier, or n8n? Here’s a head‑to‑head.</p>
 <table class="price-table">
-<thead><tr><th>Tool</th><th>Purpose</th><th>Price (starting)</th><th>Affiliate Link</th></tr></thead>
+<thead><tr><th>Feature</th><th>Make</th><th>Zapier</th><th>n8n (self‑hosted)</th></tr></thead>
 <tbody>
-<tr><td><strong>CRM</strong> (HubSpot recommended)</td><td>Track leads, clients, and trigger workflows</td><td>Free tier available</td><td><a href="https://www.hubspot.com/products/crm" rel="nofollow sponsored">HubSpot CRM -></a></td></tr>
-<tr><td><strong>Email marketing</strong> (ConvertKit or <a href="https://moosend.com/?ref=revenueclaw" rel="nofollow sponsored">Moosend</a>)</td><td>Send automated onboarding emails</td><td>Free up to 1,000 subscribers</td><td><a href="https://convertkit.com/" rel="nofollow sponsored">ConvertKit -></a> / <a href="https://moosend.com/" rel="nofollow sponsored">Moosend -></a></td></tr>
-<tr><td><strong>Payment processor</strong> (Stripe)</td><td>Collect deposits or first invoices</td><td>2.9% + $0.30 per transaction</td><td><a href="https://stripe.com/" rel="nofollow sponsored">Stripe -></a></td></tr>
-<tr><td><strong>Automation platform</strong> (Zapier)</td><td>Connect everything together</td><td>Free tier (100 tasks/month)</td><td><a href="https://zapier.com/" rel="nofollow sponsored">Zapier -></a></td></tr>
-<tr><td><strong>E-signature tool</strong> (optional)</td><td>Send contracts for signing</td><td>Free options like DocuSign or HelloSign</td><td>(built into some CRMs)</td></tr>
+<tr><td><strong>Price (starter plan)</strong></td><td>$9/month (10k ops)</td><td>$19.99/month (2k tasks)</td><td>Free (self‑hosted)</td></tr>
+<tr><td><strong>Operations / tasks</strong></td><td>10,000 ops</td><td>2,000 tasks</td><td>Unlimited</td></tr>
+<tr><td><strong>Visual builder</strong></td><td>Advanced, with branching</td><td>Simple, linear</td><td>Good, with code nodes</td></tr>
+<tr><td><strong>Error handling</strong></td><td>Built‑in rollback, retry</td><td>Basic retry</td><td>Customisable</td></tr>
+<tr><td><strong>Data transformation</strong></td><td>Powerful built‑in tools</td><td>Limited (needs code)</td><td>Full JavaScript</td></tr>
+<tr><td><strong>Pre‑built integrations</strong></td><td>1,500+</td><td>5,000+</td><td>200+ (community)</td></tr>
+<tr><td><strong>Free tier</strong></td><td>Yes (1,000 ops/month)</td><td>Yes (100 tasks/month)</td><td>Yes (self‑hosted)</td></tr>
+<tr><td><strong>Ideal for</strong></td><td>Complex workflows</td><td>Simple automations</td><td>Developers, high‑volume</td></tr>
 </tbody>
 </table>
-<p><strong>Skills needed:</strong> Basic familiarity with drag-and-drop workflow builders and a willingness to test. No coding required.</p>
+<p><strong>Verdict on tools</strong>: Zapier is easiest to start with but gets expensive fast. Make gives you more power for less money. n8n is free but requires server maintenance – not ideal for most small businesses.</p>
 <hr>
-<h2 id="step-1-map-out-your-client-onboarding-steps">Step 1: Map Out Your Client Onboarding Steps</h2>
-<p>Automation is only as good as the process it’s automating. So first, write down every step that happens between “client says yes” and “first deliverable delivered.”</p>
-<p>Here’s a typical onboarding sequence:</p>
+<h2 id="pros-and-cons-of-each-approach">Pros and Cons of Each Approach</h2>
+<h3 id="using-make-diy-automation">Using Make (or Zapier) – DIY Automation</h3>
+<p><strong>Pros</strong></p>
 <ul>
-<li><strong>Client accepts proposal</strong> – trigger event</li>
-<li><strong>Send contract</strong> for e-signature</li>
-<li><strong>Collect deposit</strong> or first payment via Stripe</li>
-<li><strong>Send welcome email</strong> with project overview, timeline, and next steps</li>
-<li><strong>Schedule kickoff call</strong> (or send a calendar link)</li>
-<li><strong>Send intake form</strong> to gather preferences, brand assets, etc.</li>
-<li><strong>Follow-up reminder</strong> if payment or form is missing</li>
-<li><strong>Notify your team</strong> (Slack, email, etc.)</li>
-<li><strong>Move client to “active” status</strong> in CRM</li>
+<li>Highly customisable – you control every step.</li>
+<li>Can integrate almost any SaaS tool.</li>
+<li>Scales with your business (you add more modules as you grow).</li>
+<li>Cheaper than all‑in‑one onboarding suites.</li>
 </ul>
-<p>Map these steps in order. Some happen simultaneously (e.g., contract and payment can go together). Others are conditional (if payment not received in 2 days, send reminder).</p>
-<p><strong>Pro tip:</strong> Use a simple flowchart tool like Miro or even a piece of paper. The clearer your map, the easier the automation.</p>
+<p><strong>Cons</strong></p>
+<ul>
+<li>Requires a bit of setup time (1–2 hours to build the first workflow).</li>
+<li>No built‑in client portal or invoice generation (you need separate apps).</li>
+<li>Debugging errors can be tedious if you’re not technical.</li>
+</ul>
+<h3 id="using-an-all-in-one-onboarding-tool">Using an All‑in‑One Onboarding Tool (e.g., Dubsado, HoneyBook)</h3>
+<p><strong>Pros</strong></p>
+<ul>
+<li>Everything in one dashboard: forms, contracts, invoices, scheduling.</li>
+<li>Beautiful client‑facing portal.</li>
+<li>Less setup – templates are ready to go.</li>
+</ul>
+<p><strong>Cons</strong></p>
+<ul>
+<li>Expensive ($40–$60/month).</li>
+<li>Limited automation capabilities outside their ecosystem.</li>
+<li>Hard to migrate if you outgrow them.</li>
+</ul>
+<p>For most small businesses, the DIY route with Make is the winner – you get enterprise‑grade automation for a fraction of the price.</p>
 <hr>
-<h2 id="step-2-set-up-your-crm-to-trigger-workflows">Step 2: Set Up Your CRM to Trigger Workflows</h2>
-<p>Your CRM is the brain of the operation. When a client moves from “lead” to “won,” it should automatically kick off the entire onboarding sequence.</p>
-<p>I recommend <strong>HubSpot</strong> for this because its free CRM includes workflow automation. Other options like Pipedrive or Freshsales also work, but HubSpot’s free tier is generous.</p>
-<h3 id="how-to-set-up-the-trigger-in-hubspot">How to set up the trigger in HubSpot:</h3>
-<ul>
-<li>Create a custom property called “Onboarding Stage” with options: Awaiting Contract, Contract Sent, Paid, Active.</li>
-<li>When a deal is marked “Closed Won,” set up a workflow that:</li>
-</ul>
-<p>- Changes the contact’s lifecycle stage from Lead to Customer</p>
-<p>- Sets the Onboarding Stage to “Awaiting Contract”</p>
-<p>- Sends a Slack message (via Zapier) to your team</p>
-<p>- Triggers an email to the client with a link to your contract (we’ll automate that next)</p>
-<p><strong>Alternative:</strong> If you don’t use a CRM yet, you can use Google Sheets + Zapier as a lightweight trigger, but a real CRM scales better.</p>
+<h2 id="final-verdict">Final Verdict</h2>
+<p>If you’re a freelancer or small agency owner who wants a client onboarding workflow that runs itself without breaking the bank, <strong>use Make</strong> (or Zapier if you prefer simplicity). Pair it with a form builder (Typeform), an e‑signature tool (PandaDoc), and a project manager (Trello). You’ll have a system that handles the grunt work while you focus on delivering results.</p>
+<p>The all‑in‑one tools are fine, but they lock you into their ecosystem and cost more. For the same price as Dubsado, you can run Make for five months and have far more flexibility.</p>
+<p><a href="https://make.com" rel="nofollow sponsored">Check Make -></a></p>
 <hr>
-<h2 id="step-3-automate-document-collection-and-payments">Step 3: Automate Document Collection and Payments</h2>
-<p>Now we need to send the contract and collect the deposit. You can use a dedicated e-signature tool like DocuSign or HelloSign, but many CRMs (including HubSpot) have built-in quote and signature features.</p>
-<p>I prefer <strong>Stripe</strong> for payments because it integrates directly with Zapier and most CRMs.</p>
-<h3 id="build-the-payment-automation">Build the payment automation:</h3>
-<ul>
-<li>In your CRM, create a product or line item for your onboarding fee/deposit.</li>
-<li>Use Zapier to watch for a new deal in HubSpot with stage “Closed Won” and then:</li>
-</ul>
-<p>- Create a Stripe invoice (or payment link) for the client</p>
-<p>- Send the invoice via email</p>
-<p>- Add a 2-day delay, then check if payment was received</p>
-<p>- If not paid, send a reminder email (via ConvertKit or Moosend)</p>
-<ul>
-<li>For the contract, use a template in HubSpot or DocuSign and attach it to the same Zapier flow.</li>
-</ul>
-<p><strong>Important:</strong> <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> sure your contract and payment are sent together. You don’t want to start work before payment clears.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<p><strong>Q: Do I need to know how to code to build this workflow?</strong></p>
+<p>A: No. Make uses a drag‑and‑drop visual builder. If you can draw a flowchart, you can build this.</p>
+<p><strong>Q: What if a step fails – will the client get stuck?</strong></p>
+<p>A: Make has automatic error handling. You can set it to retry or notify you. I recommend adding a Slack alert so you know immediately.</p>
+<p><strong>Q: Can I use this for multiple types of clients (different services)?</strong></p>
+<p>A: Yes. Use filters in Make to branch the workflow based on a field in your intake form (e.g., “Service Type”). Each branch can have its own contract template and task list.</p>
+<p><strong>Q: How much time will this save me per client?</strong></p>
+<p>A: Most manual onboarding takes 30–60 minutes of repetitive work. Automation reduces that to zero – you just <a href="https://www.amazon.com/dp/B09HS3LWK7?tag=automatecom-20&linkCode=ogi&th=1&psc=1" rel="nofollow sponsored">Monitor</a>. Over 10 clients a month, that’s 5–10 hours saved.</p>
+<p><strong>Q: What if I already use a CRM like <a href="https://hubspot.sjv.io/revenueclaw" rel="nofollow sponsored">Hubspot</a> or Salesforce?</strong></p>
+<p>A: Make has deep integrations with both. You can trigger the workflow from a CRM deal stage change and write back data. The same principles apply.</p>
 <hr>
-<h2 id="step-4-automate-welcome-emails-and-follow-ups">Step 4: Automate Welcome Emails and Follow-Ups</h2>
-<p>Once the contract is signed and payment is received, it’s time to roll out the red carpet. This is where email marketing tools shine.</p>
-<p><strong>ConvertKit</strong> is my go-to for simple, visual automation sequences. It’s built for creators and small businesses. <strong>Moosend</strong> is a cheaper alternative with similar features.</p>
-<h3 id="create-a-welcome-sequence">Create a welcome sequence:</h3>
-<ul>
-<li><strong>Email 1 (immediate):</strong> “Welcome to the team!” – project overview, timeline, next steps, and a link to your calendar for the kickoff call.</li>
-<li><strong>Email 2 (1 day later):</strong> “Let’s get started” – intake form for preferences, brand assets, passwords, etc.</li>
-<li><strong>Email 3 (3 days later if no intake form submitted):</strong> “Friendly reminder” – link to the form again.</li>
-<li><strong>Email 4 (7 days later):</strong> “Kickoff call prep” – agenda for the call, client homework.</li>
-</ul>
-<h3 id="how-to-trigger-these-from-your-crm">How to trigger these from your CRM:</h3>
-<p>Use Zapier to connect HubSpot to ConvertKit. When a contact’s lifecycle stage becomes “Customer” (or a custom field “Payment Received” = Yes), add them to a ConvertKit tag or sequence. ConvertKit will then send the emails on schedule.</p>
-<p><strong>Comparison: ConvertKit vs Moosend</strong></p>
-<table class="price-table">
-<thead><tr><th>Feature</th><th>ConvertKit</th><th>Moosend</th></tr></thead>
-<tbody>
-<tr><td>Free tier</td><td>Up to 1,000 subs, unlimited emails</td><td>Up to 1,000 subs, unlimited emails</td></tr>
-<tr><td>Visual automation</td><td>Yes (visual builder)</td><td>Yes (drag-and-drop)</td></tr>
-<tr><td>Tagging & segmentation</td><td>Excellent</td><td>Good</td></tr>
-<tr><td>Integrations</td><td>90+ (Zapier included)</td><td>100+ (Zapier included)</td></tr>
-<tr><td>Pricing (1k subs)</td><td>$29/month</td><td>$10/month</td></tr>
-<tr><td>Best for</td><td>Creators, course builders</td><td>Budget-conscious small businesses</td></tr>
-</tbody>
-</table>
-<p>Both work well. I lean toward ConvertKit for its simplicity, but Moosend saves you money.</p>
-<hr>
-<h2 id="step-5-connect-everything-with-zapier">Step 5: Connect Everything with Zapier (The Glue)</h2>
-<p>Zapier is the muscle that ties your CRM, email, payments, and calendar together. You’ll need a few Zaps (automated workflows) to make the onboarding pipeline smooth.</p>
-<h3 id="essential-zaps">Essential Zaps:</h3>
-<ul>
-<li><strong>HubSpot → Stripe:</strong> When deal moves to “Closed Won,” create Stripe invoice and send payment link.</li>
-<li><strong>Stripe → HubSpot:</strong> When payment is successful, update contact property “Payment Received” to Yes.</li>
-<li><strong>HubSpot → ConvertKit:</strong> When “Payment Received” = Yes, add contact to ConvertKit sequence “Client Onboarding.”</li>
-<li><strong>HubSpot → Google Calendar:</strong> When contract signed, create a kickoff call event (or send a Calendly link).</li>
-<li><strong>Stripe → Slack:</strong> When payment fails or is late, notify your team.</li>
-</ul>
-<p><strong>Pro tip:</strong> Use Zapier’s “Filter” step to avoid duplicate triggers. For example, only run the payment Zap if the client hasn’t already been invoiced.</p>
-<p><strong>Cost consideration:</strong> Zapier’s free plan gives 100 tasks/month, which is enough for a handful of clients. If you onboard more than 10 clients a month, you’ll need the Starter plan ($19.99/month). Alternatives like Make (formerly Integromat) offer cheaper rates but steeper learning curve.</p>
-<hr>
-<h2 id="troubleshooting-common-issues">Troubleshooting Common Issues</h2>
-<p>Even the best automated workflows hit snags. Here are the most common problems and how to fix them.</p>
-<h3 id="1-duplicate-emails-or-triggers">1. Duplicate emails or triggers</h3>
-<p><strong>Problem:</strong> Client gets two welcome emails because the Zap ran twice.</p>
-<p><strong>Solution:</strong> Add a “delay” or “only if” condition in Zapier. For example, only trigger the welcome email if the contact’s “Onboarding Stage” changes to “Active” for the first time. Use HubSpot’s workflow suppression rules to prevent re-enrollment.</p>
-<h3 id="2-payment-not-captured">2. Payment not captured</h3>
-<p><strong>Problem:</strong> Client pays but Stripe doesn’t update HubSpot.</p>
-<p><strong>Solution:</strong> Check your Zap’s test data. Often the issue is a missing mapping between Stripe’s “customer email” and HubSpot’s contact email. Also ensure you’re using the correct Stripe event (e.g., <code>invoice.payment_succeeded</code>).</p>
-<h3 id="3-delay-in-sending-emails">3. Delay in sending emails</h3>
-<p><strong>Problem:</strong> Welcome email arrives hours late.</p>
-<p><strong>Solution:</strong> Zapier’s free plan has a 15-minute polling interval. Upgrade to a paid plan for near-instant triggers. Alternatively, use ConvertKit’s native integration with HubSpot (if available) to avoid Zapier entirely.</p>
-<h3 id="4-client-misses-intake-form">4. Client misses intake form</h3>
-<p><strong>Problem:</strong> Client doesn’t fill out the form, and you end up chasing manually.</p>
-<p><strong>Solution:</strong> Add a second reminder email after 3 days, and a third after 7 days. If still not completed, have the Zap send a Slack message to you so you can reach out personally.</p>
-<h3 id="5-calendar-scheduling-fails">5. Calendar scheduling fails</h3>
-<p><strong>Problem:</strong> Kickoff call never gets booked.</p>
-<p><strong>Solution:</strong> Instead of trying to auto-schedule, send a Calendly or Acuity link in the welcome email. Those tools handle time zones and availability automatically. You can even embed the link in ConvertKit.</p>
-<hr>
-<h2 id="conclusion">Conclusion</h2>
-<p>Building a client onboarding workflow that runs itself isn’t just a time-saver — it’s a professional upgrade. Your clients get a smooth, consistent experience, and you free up hours every week to focus on actual work.</p>
-<p>Here’s my verdict on the best stack:</p>
-<ul>
-<li><strong>CRM:</strong> HubSpot (free tier is unbeatable for small businesses)</li>
-<li><strong>Email marketing:</strong> ConvertKit (better automation, slightly pricier) or Moosend (budget-friendly)</li>
-<li><strong>Payments:</strong> Stripe (industry standard, great API)</li>
-<li><strong>Automation glue:</strong> Zapier (easiest to set up, but watch your task count)</li>
-</ul>
-<p><strong>Winner:</strong> If I had to pick one combination that works out of the box for most freelancers and small agencies, it’s <strong>HubSpot + ConvertKit + Stripe + Zapier</strong>. It’s not the cheapest, but it’s the most reliable and requires the least maintenance.</p>
-<p>Start with Step 1 — map your current onboarding process. Then build one piece at a time. Don’t try to automate everything at once. Test each Zap before adding the next. Within a week, you’ll have a system that handles the grunt work while you focus on what you do best.</p>
-<p>Now go set it up. Your future self will thank you.</p>
+<p>Building a self‑running client onboarding workflow is one of the highest‑ROI automation projects you can do. It impresses clients, reduces errors, and frees up your time. Start with the steps above, tweak as you go, and soon you’ll wonder why you ever did it manually.</p>
             <div class="affiliate-cta">
     <p>🔍 Want the best deal? Check current prices and availability.</p>
     <a href="https://automatecompare.com/#deals" class="cta-btn">Compare Prices →</a>
@@ -231,6 +204,13 @@
         <div class="card">
                 <div class="card-meta">
                     <span class="badge badge-tutorial">Tutorial</span>
+                    <time>September 05, 2026</time>
+                </div>
+                <h3><a href="/tutorial/build-automated-lead-generation-funnel-scratch">How to Build an Automated Lead Generation Funnel from Scratch</a></h3>
+                <p>*When you buy through links on our site, we may earn a commission.*  # How to Build an Automated Lead Generation Funnel </p>
+            </div><div class="card">
+                <div class="card-meta">
+                    <span class="badge badge-tutorial">Tutorial</span>
                     <time>September 04, 2026</time>
                 </div>
                 <h3><a href="/tutorial/set-up-automated-email-welcome-sequence">How to Set Up an Automated Email Welcome Sequence (Step by Step)</a></h3>
@@ -242,13 +222,6 @@
                 </div>
                 <h3><a href="/tutorial/connect-crm-email-marketing-seamless-lead-nurturing">How to Connect Your CRM to Email Marketing for Smarter Lead Nurturing</a></h3>
                 <p>*When you buy through links on our site, we may earn a commission.*  So you’ve got a CRM full of contacts and an email m</p>
-            </div><div class="card">
-                <div class="card-meta">
-                    <span class="badge badge-tutorial">Tutorial</span>
-                    <time>August 12, 2026</time>
-                </div>
-                <h3><a href="/tutorial/build-automated-lead-generation-funnel-scratch">How to Build an Automated Lead Generation Funnel from Scratch</a></h3>
-                <p>*When you buy through links on our site, we may earn a commission.*  Let’s face it: manually chasing leads is exhausting</p>
             </div><div class="card">
                 <div class="card-meta">
                     <span class="badge badge-tutorial">Tutorial</span>
@@ -264,25 +237,20 @@
     <aside class="article-sidebar">
     <div class="toc">
         <h4>On This Page</h4>
-        <a href="#prerequisites" class="toc-h2" style="padding-left:0px">Prerequisites</a>
-<a href="#what-you-ll-need" class="toc-h3" style="padding-left:8px">What you’ll need:</a>
-<a href="#step-1-map-out-your-client-onboarding-steps" class="toc-h2" style="padding-left:0px">Step 1: Map Out Your Client Onboarding Steps</a>
-<a href="#step-2-set-up-your-crm-to-trigger-workflows" class="toc-h2" style="padding-left:0px">Step 2: Set Up Your CRM to Trigger Workflows</a>
-<a href="#how-to-set-up-the-trigger-in-hubspot" class="toc-h3" style="padding-left:8px">How to set up the trigger in HubSpot:</a>
-<a href="#step-3-automate-document-collection-and-payments" class="toc-h2" style="padding-left:0px">Step 3: Automate Document Collection and Payments</a>
-<a href="#build-the-payment-automation" class="toc-h3" style="padding-left:8px">Build the payment automation:</a>
-<a href="#step-4-automate-welcome-emails-and-follow-ups" class="toc-h2" style="padding-left:0px">Step 4: Automate Welcome Emails and Follow-Ups</a>
-<a href="#create-a-welcome-sequence" class="toc-h3" style="padding-left:8px">Create a welcome sequence:</a>
-<a href="#how-to-trigger-these-from-your-crm" class="toc-h3" style="padding-left:8px">How to trigger these from your CRM:</a>
-<a href="#step-5-connect-everything-with-zapier" class="toc-h2" style="padding-left:0px">Step 5: Connect Everything with Zapier</a>
-<a href="#essential-zaps" class="toc-h3" style="padding-left:8px">Essential Zaps:</a>
-<a href="#troubleshooting-common-issues" class="toc-h2" style="padding-left:0px">Troubleshooting Common Issues</a>
-<a href="#1-duplicate-emails-or-triggers" class="toc-h3" style="padding-left:8px">1. Duplicate emails or triggers</a>
-<a href="#2-payment-not-captured" class="toc-h3" style="padding-left:8px">2. Payment not captured</a>
-<a href="#3-delay-in-sending-emails" class="toc-h3" style="padding-left:8px">3. Delay in sending emails</a>
-<a href="#4-client-misses-intake-form" class="toc-h3" style="padding-left:8px">4. Client misses intake form</a>
-<a href="#5-calendar-scheduling-fails" class="toc-h3" style="padding-left:8px">5. Calendar scheduling fails</a>
-<a href="#conclusion" class="toc-h2" style="padding-left:0px">Conclusion</a>
+        <a href="#what-makes-a-client-onboarding-workflow-run-itself" class="toc-h2" style="padding-left:0px">What Makes a Client Onboarding Workflow “Run Itself”?</a>
+<a href="#what-you-ll-need" class="toc-h2" style="padding-left:0px">What You’ll Need</a>
+<a href="#step-by-step-building-the-workflow-in-make" class="toc-h2" style="padding-left:0px">Step‑by‑Step: Building the Workflow in Make</a>
+<a href="#step-1-the-trigger-new-client-signup" class="toc-h3" style="padding-left:8px">Step 1: The Trigger – New Client Signup</a>
+<a href="#step-2-send-the-welcome-email-documents" class="toc-h3" style="padding-left:8px">Step 2: Send the Welcome Email + Documents</a>
+<a href="#step-3-create-project-folders-and-tasks" class="toc-h3" style="padding-left:8px">Step 3: Create Project Folders and Tasks</a>
+<a href="#step-4-schedule-the-kickoff-call" class="toc-h3" style="padding-left:8px">Step 4: Schedule the Kickoff Call</a>
+<a href="#step-5-notify-your-team" class="toc-h3" style="padding-left:8px">Step 5: Notify Your Team</a>
+<a href="#comparison-table-best-automation-platforms-for-client-onboarding" class="toc-h2" style="padding-left:0px">Comparison Table: Best Automation Platforms for Client Onboarding</a>
+<a href="#pros-and-cons-of-each-approach" class="toc-h2" style="padding-left:0px">Pros and Cons of Each Approach</a>
+<a href="#using-make-diy-automation" class="toc-h3" style="padding-left:8px">Using Make – DIY Automation</a>
+<a href="#using-an-all-in-one-onboarding-tool" class="toc-h3" style="padding-left:8px">Using an All‑in‑One Onboarding Tool</a>
+<a href="#final-verdict" class="toc-h2" style="padding-left:0px">Final Verdict</a>
+<a href="#frequently-asked-questions" class="toc-h2" style="padding-left:0px">Frequently Asked Questions</a>
     </div>
 </aside>
 </article>
