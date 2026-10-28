@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Set Up Automated Refund and Cancellation Processing | Automate Compare</title>
-    <meta name="description" content="Build an automated refund and cancellation workflow for your small business. Compare Stripe Billing, Chargebee, Recurly, Paddle and more with real pricing.">
-    <meta name="keywords" content="refund automation, cancellation processing, billing operations, automated refunds, subscription cancellation workflow, refund workflow automation">
+
+    <!-- Amazon OneLink -- auto-redirect international visitors to their local store -->
+    <div id="amzn-assoc-ad"></div>
+    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
+    <title>How to Set Up Automated Refund and Cancellation Processing (2026 Tutorial) | Automate Compare</title>
+    <meta name="description" content="Build an automated refund and cancellation workflow that enforces your policy, revokes access, and keeps your books clean — with tool comparisons and real price">
+    <meta name="keywords" content="refund automation, cancellation processing, billing operations, subscription cancellation automation, refund workflow, Stripe Billing, Chargebee, Paddle">
         <meta name="impact-site-verification" value="72e78125-83d8-4a51-b7db-e3ad7e2be67b">
     <link rel="canonical" href="https://automatecompare.com/tutorial/set-up-automated-refund-cancellation-processing">
     <link rel="stylesheet" href="/style.css?v=20260804">
@@ -30,10 +34,10 @@
     },
     {
       "@type": "Article",
-      "headline": "How to Set Up Automated Refund and Cancellation Processing",
-      "description": "Build an automated refund and cancellation workflow for your small business. Compare Stripe Billing, Chargebee, Recurly, Paddle and more with real pricing.",
-      "datePublished": "2026-10-20",
-      "dateModified": "2026-10-20",
+      "headline": "How to Set Up Automated Refund and Cancellation Processing (2026 Tutorial)",
+      "description": "Build an automated refund and cancellation workflow that enforces your policy, revokes access, and keeps your books clean \u2014 with tool comparisons and real prices.",
+      "datePublished": "2026-10-26",
+      "dateModified": "2026-10-26",
       "author": {
         "@type": "Person",
         "name": "Editorial Team"
@@ -80,12 +84,12 @@
     How to Set Up Automated Refund and Cancellation Pr...
 </nav>
         <header class="article-header">
-            <h1>How to Set Up Automated Refund and Cancellation Processing</h1>
+            <h1>How to Set Up Automated Refund and Cancellation Processing (2026 Tutorial)</h1>
             <div class="meta-row">
                 <span class="badge badge-tutorial">Tutorial</span>
-                <time datetime="2026-10-20">October 20, 2026</time>
+                <time datetime="2026-10-26">October 26, 2026</time>
                 <span>·</span>
-                <span class="reading-time">8 min read</span>
+                <span class="reading-time">7 min read</span>
                 <span class="affiliate-tag">🔄 Affiliate Links</span>
             </div>
         </header>
@@ -96,67 +100,70 @@
     <a href="https://automatecompare.com/#deals" class="cta-btn">Compare Prices →</a>
 </div>
             <p><em>When you buy through links on our site, we may earn a commission.</em></p>
-<h2 id="how-to-set-up-automated-refund-and-cancellation-processing">How to Set Up Automated Refund and Cancellation Processing</h2>
-<p>It's 11:40 on a Friday night. A customer emails asking to cancel and wants last month refunded. Nobody sees it until Monday. By then they've already filed a chargeback, your payment processor has dinged you a $15 dispute fee, and the "cancel" request has been sitting in an inbox while their subscription renewed for another month.</p>
-<p>That's the reality for most small businesses running billing by hand. Refunds and cancellations are the least glamorous part of operations, which is exactly why they get ignored until they become expensive. A chargeback costs more than the refund would have. A botched cancellation turns a customer who might have come back into one who leaves a one-star review.</p>
-<p>The good news: this is one of the most automatable workflows in your entire business. The rules are predictable, the data lives in systems that talk to each other, and the whole thing can run without you touching it. This guide walks through how to build it, which tools do it best, and what it actually costs.</p>
-<h2 id="what-counts-as-refund-and-cancellation-processing">What counts as "refund and cancellation processing"</h2>
-<p>People lump these together, but they're two different workflows that often share plumbing.</p>
-<p><strong>Refund automation</strong> is the money side. A customer wants their payment back — full or partial — and something needs to approve it, send it back through the processor, update the order record, and tell the customer it happened. The trigger might be a support ticket, a self-serve form, or a policy rule like "any order returned within 30 days gets refunded automatically."</p>
-<p><strong>Cancellation processing</strong> is the access side. A subscriber wants to stop paying. That involves capturing why they're leaving, optionally presenting a retention offer, deciding whether to cancel immediately or at period end, revoking access at the right moment, and updating your CRM so sales isn't still emailing them.</p>
-<p><strong>Billing operations</strong> is the umbrella term for the glue: proration math, dunning for failed payments, revenue recognition, reconciliation between your processor and your accounting software. Get refunds and cancellations automated and your billing operations stop being a source of surprises.</p>
-<p>The tricky part is that these workflows touch four or five different systems. Your payment processor knows about the money. Your helpdesk knows about the request. Your app or storefront knows about access. Your accounting software knows about revenue. Automation is what keeps those four in sync.</p>
-<h2 id="the-five-stages-of-an-automated-flow">The five stages of an automated flow</h2>
-<p>Every refund or cancellation workflow, no matter how simple, has the same skeleton. Miss a stage and something breaks downstream.</p>
-<p><strong>1. Trigger.</strong> What starts the process? A tagged support ticket, a form submission, a webhook from your billing platform, or a scheduled job that sweeps for expired trials. The trigger determines how fast you respond, and speed is the single biggest factor in whether a cancellation becomes a chargeback.</p>
-<p><strong>2. Eligibility check.</strong> Before money moves, you verify. Was the payment within your refund window? Has this customer already been refunded for the same order? Is the amount over the threshold that requires a human? This is where most homegrown automations fail — they skip the check and refund twice.</p>
-<p><strong>3. Execution.</strong> Call the API that does the thing. Stripe's refund endpoint, Chargebee's cancellation endpoint, Shopify's refund mutation. If the amount or timing is unusual, route it to a person instead of guessing.</p>
-<p><strong>4. Confirmation.</strong> Tell the customer what happened, in plain language, with an amount and a date. This step is boring and it's the one that prevents "where's my money" tickets two days later.</p>
-<p><strong>5. Record keeping.</strong> Write the event to a log — a spreadsheet, Airtable, or your data warehouse. Refund automation without a paper trail is how you end up unable to answer "how much did we refund last quarter."</p>
-<h2 id="feature-breakdown-what-the-tools-actually-give-you">Feature breakdown: what the tools actually give you</h2>
-<h3 id="stripe-billing">Stripe Billing</h3>
-<p>Stripe's refund API is the reference implementation. You pass a charge ID and an amount, and it handles the rest — partial refunds, refunds to the original payment method, and automatic handling of the fee return. Cancellation is handled through subscriptions: set <code>cancel_at_period_end</code> for end-of-term, or cancel immediately with proration.</p>
-<p>What makes it useful for automation is the webhook coverage. Every refund and cancellation fires an event you can subscribe to, which means your downstream systems find out without polling. The billing portal is a hosted page where customers manage their own subscriptions, including cancellation — you can configure it to offer a pause or a discount before letting them go.</p>
-<p>The weak spot is policy logic. Stripe will execute whatever you tell it, but deciding <em>whether</em> to refund is on you. For anything beyond "refund this charge," you're building the rules yourself in code or in an automation platform.</p>
-<p><a href="https://stripe.com/billing" rel="nofollow sponsored">Check Stripe Billing -></a></p>
-<h3 id="chargebee">Chargebee</h3>
-<p>Chargebee is built specifically for subscription businesses, and cancellation processing is a first-class feature rather than something you bolt on. You get cancellation flows with reason codes, configurable retention offers, and the ability to cancel at period end or immediately with proration handled for you. Refunds can be full, partial, or prorated, and there's a self-serve portal customers can use without contacting support.</p>
-<p>The part that matters for billing operations is the accounting layer. Chargebee generates revenue recognition schedules, handles dunning with retry logic, and reconciles against your processor. If you've ever tried to explain to your accountant why Stripe's numbers and your bookkeeping don't match, that's the problem it solves.</p>
-<p>The tradeoff is cost and complexity. Chargebee is priced for businesses with meaningful recurring revenue, and the setup takes real configuration work. A solo operator with 40 subscribers doesn't need it.</p>
-<p><a href="https://www.chargebee.com" rel="nofollow sponsored">Check Chargebee -></a></p>
-<h3 id="recurly">Recurly</h3>
-<p>Recurly sits in the same category as Chargebee — subscription management with refunds, cancellation flows, dunning, and revenue recognition. It's strong on enterprise features: multi-currency, tax handling, and detailed churn analytics that tell you <em>why</em> people cancel, not just that they did.</p>
-<p>Pricing is tiered by monthly recurring revenue, which means it scales with you but also means the entry point is higher than a payment processor alone. Good fit for subscription businesses in the $10K–$100K MRR range that need the reporting.</p>
-<p><a href="https://recurly.com" rel="nofollow sponsored">Check Recurly -></a></p>
-<h3 id="paddle">Paddle</h3>
-<p>Paddle works differently. It's a merchant of record, meaning Paddle is the seller of record — they handle sales tax, VAT, and compliance globally. For refunds and cancellations, that's genuinely useful: Paddle's team absorbs the tax-side complexity of a refund across jurisdictions.</p>
-<p>The cost is the fee structure. Paddle takes a percentage per transaction that's higher than raw Stripe processing, because you're paying for the merchant-of-record service. If you sell digital products internationally and don't want to think about VAT, it's a reasonable trade. If you're US-only, you're paying for something you don't need.</p>
-<p><a href="https://www.paddle.com" rel="nofollow sponsored">Check Paddle -></a></p>
-<h3 id="zapier-and-make">Zapier and <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a></h3>
-<p>These aren't billing platforms — they're the connective tissue. Zapier has native triggers and actions for Stripe, Chargebee, Recurly, Shopify, Gorgias, <a href="https://www.zendesk.com/?ref=revenueclaw" rel="nofollow sponsored">Zendesk</a>, <a href="https://hubspot.sjv.io/revenueclaw" rel="nofollow sponsored">HubSpot</a>, Slack, Google Sheets, and a few thousand others. <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> does the same with more control over branching logic and lower per-task costs.</p>
-<p>This is where you build the policy layer. "When a ticket is tagged <code>refund-approved</code>, check the order date in Sheets, if it's within 30 days call the Stripe refund action, then post to Slack and update the <a href="https://hubspot.sjv.io/revenueclaw" rel="nofollow sponsored">HubSpot</a> deal." That kind of workflow takes twenty minutes in Zapier and would take a developer half a day to build from scratch.</p>
-<p>The limitation is that neither tool is great at complex state. If your refund logic has fifteen branches and needs to remember what happened last time, you'll outgrow them.</p>
-<p><a href="https://zapier.com" rel="nofollow sponsored">Check Zapier -></a></p>
-<p><a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Check [Make</a> ->](https://www.make.com)</p>
-<h3 id="helpdesks-gorgias-and-zendesk">Helpdesks: Gorgias and <a href="https://www.zendesk.com/?ref=revenueclaw" rel="nofollow sponsored">Zendesk</a></h3>
-<p>If your refund requests come in through support, the helpdesk is the natural place to start the workflow. Gorgias is built for ecommerce and connects directly to Shopify — an agent can issue a refund from inside the ticket. <a href="https://www.zendesk.com/?ref=revenueclaw" rel="nofollow sponsored">Zendesk</a> does the same through marketplace apps.</p>
-<p>The advantage is that the request, the decision, and the action all live in one place. The disadvantage is that helpdesk-based refunds are still manual — an agent has to click the button. Good for control, not for scale.</p>
-<h3 id="shopify-flow">Shopify Flow</h3>
-<p>If you're on Shopify, Flow is free on most plans and handles order-level automation natively. You can build "when an order is tagged <code>return-received</code>, wait 3 days, then issue refund" without leaving Shopify. It's limited compared to Zapier, but for straightforward ecommerce refunds it's zero extra cost.</p>
-<h2 id="comparison-table">Comparison table</h2>
-<p>Pricing below reflects published rates at the time of writing. Every vendor in this space changes plans regularly, so verify before you commit.</p>
+<h2 id="how-to-set-up-automated-refund-and-cancellation-processing">How to Set Up Automated Refund and Cancellation Processing (2026 Tutorial)</h2>
+<p>Somewhere around month six of running a small business, refunds stop being a rare event and start being a Tuesday. A customer emails asking for their money back. Another one fills out your contact form. A third replies to a Stripe receipt with "please cancel." Three different inboxes, three different people, three different outcomes — and nobody's quite sure whether the customer in the third case actually got cancelled or just got ignored.</p>
+<p>That's the problem refund automation solves. Not the refund itself — that's one API call — but the messy middle: verifying who's asking, checking whether they qualify, executing the refund correctly, cancelling the subscription so it doesn't bill again next month, revoking their access to whatever they bought, and leaving a trail your accountant can follow in April.</p>
+<p>This tutorial walks through building that workflow. I'll cover the prerequisites most guides skip, the eight steps that <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> up a solid cancellation processing pipeline, a comparison of the tools that actually do the work, and an honest verdict on what to buy.</p>
+<h2 id="first-decide-what-automated-means-for-you">First, decide what "automated" means for you</h2>
+<p>People use the phrase loosely, and it causes bad purchases. There are three distinct levels, and they cost very different amounts.</p>
+<p><strong>Level 1: Self-serve.</strong> The customer clicks "cancel" in a billing portal and the system handles everything. No human touches it. Great for standard monthly plans, useless for anything requiring judgment.</p>
+<p><strong>Level 2: Rules-based.</strong> A request arrives through a form or email parser. Automation checks it against your policy, then either executes the refund or escalates it to you with context attached. This is where most small businesses should land.</p>
+<p><strong>Level 3: Assisted.</strong> Automation gathers the customer record, invoice history, and usage data, then drafts the refund and waits for a one-click approval. Good for high-ticket or high-risk transactions.</p>
+<p>You can mix all three. Most of my clients run Level 1 for sub-$100 monthly plans and Level 2 for everything else. The point is to know which one you're building before you start comparing software, because a Level 1 setup needs a billing portal and a Level 2 setup needs a workflow engine.</p>
+<h2 id="prerequisites-the-boring-stuff-that-determines-whether-this-works">Prerequisites: the boring stuff that determines whether this works</h2>
+<p>Automation amplifies whatever process you already have. If your refund policy lives in your head, you'll automate inconsistency.</p>
+<p><strong>Write the policy down in rules, not prose.</strong> "Refunds within 30 days, full amount, no questions" is a rule. "We want customers to be happy" is not. You need the machine-readable version: what's the window, is it full or partial, does it prorate, what happens to add-ons, what's the exception path. A one-page decision table is enough.</p>
+<p><strong>Pick one source of truth for subscription status.</strong> This is the single most common failure I see. Someone's active in Stripe, still has a login in your app, and is on a mailing list — because three systems each think they own the answer. Decide now: your billing platform is authoritative. Everything else syncs from it.</p>
+<p><strong>Set refund authority limits.</strong> Who can approve a $500 refund without asking? Write it down and encode it. Automation should escalate above the limit, not silently approve.</p>
+<p><strong>Turn on an audit log.</strong> Every automated refund needs a record: who requested it, what rule fired, what amount went out, which system executed it. If you can't answer "why did we refund this person" six months later, your automation is a liability.</p>
+<p><strong>Get API access and a webhook endpoint.</strong> Most billing platforms give you this on the standard plan. A few gate webhooks behind higher tiers — check before you commit.</p>
+<h2 id="the-eight-step-workflow">The eight-step workflow</h2>
+<p>Here's the pipeline I build for clients. You don't need all eight steps on day one, but this is the full picture so you can see where each tool fits.</p>
+<h3 id="step-1-capture-every-request-in-one-place">Step 1: Capture every request in one place</h3>
+<p>Refunds arrive through email, a support <a href="https://www.amazon.com/dp/B09R7ZG6Z5?tag=automatecom-20&linkCode=ogi&th=1&psc=1" rel="nofollow sponsored">Desk</a>, a form, or a portal. Funnel them into one queue. A simple Typeform or Tally form that writes to a Google Sheet or Airtable base is enough to start. If you use a helpdesk like Help Scout or <a href="https://www.intercom.com/?via=revenueclaw" rel="nofollow sponsored">Intercom</a>, tag refund requests so they route to the same place.</p>
+<p>The goal is a single record per request with a timestamp. Without that, you can't measure how long refunds take or spot the customers who ask three times.</p>
+<h3 id="step-2-verify-identity-and-locate-the-transaction">Step 2: Verify identity and locate the transaction</h3>
+<p>Before any money moves, match the request to a real customer and a real charge. Your automation should look up the email in your billing system and pull the relevant invoice or subscription ID. If there's no match, escalate — don't guess.</p>
+<p>This step also catches the fraud case: someone requesting a refund for an account they don't own. A lookup against the billing record plus a confirmation email to the address on file handles most of it.</p>
+<h3 id="step-3-apply-the-policy-engine">Step 3: Apply the policy engine</h3>
+<p>This is where the rules live. A typical decision table looks like this:</p>
 <table class="price-table">
-<thead><tr><th>Tool</th><th>Best for</th><th>Refund automation</th><th>Cancellation processing</th><th>Starting price</th><th>Transaction fees</th></tr></thead>
+<thead><tr><th>Condition</th><th>Action</th></tr></thead>
 <tbody>
-<tr><td>Stripe Billing</td><td>Businesses already on Stripe</td><td>API + webhooks; policy logic is yours</td><td>Portal + API; cancel now or at period end</td><td>0.5% of recurring revenue (Starter)</td><td>2.9% + $0.30 per card charge</td></tr>
-<tr><td>Chargebee</td><td>Subscription SMBs, $10K+ MRR</td><td>Full/partial/prorated with approval rules</td><td>Reason codes, retention offers, proration</td><td>~$599/mo (billed annually)</td><td>Pass-through processor fees</td></tr>
-<tr><td>Recurly</td><td>Subscription businesses scaling up</td><td>Full/partial with revenue recognition</td><td>Cancellation flows + churn analytics</td><td>~$249/mo (Core)</td><td>Pass-through processor fees</td></tr>
-<tr><td>Paddle</td><td>Digital products sold internationally</td><td>Handled as merchant of record</td><td>Self-serve + support-triggered</td><td>No monthly fee</td><td>~5% + $0.50 per transaction</td></tr>
-<tr><td>Zapier</td><td>Gluing systems together</td><td>Triggers refund actions in connected apps</td><td>Orchestrates multi-step cancel flows</td><td>$19.99/mo (Professional, annual)</td><td>Per-task limits by plan</td></tr>
-<tr><td>Make</td><td>Same, with more branching control</td><td>Same</td><td>Same</td><td>$9/mo (Core)</td><td>Operations-based limits</td></tr>
-<tr><td>Gorgias</td><td>Ecommerce support teams</td><td>In-ticket refunds for Shopify</td></tr>
+<tr><td>Request within 14 days, standard plan</td><td>Full refund, auto-approve</td></tr>
+<tr><td>Request 15–30 days, standard plan</td><td>Full refund, auto-approve, flag for feedback</td></tr>
+<tr><td>Request after 30 days</td><td>Escalate to human</td></tr>
+<tr><td>Annual plan, mid-term</td><td>Prorate remaining months, escalate if > $300</td></tr>
+<tr><td>Add-on or usage overage</td><td>Refund only if unused</td></tr>
+<tr><td>Chargeback already filed</td><td>Do not refund; route to disputes</td></tr>
+<tr><td>Third refund in 12 months</td><td>Escalate to owner</td></tr>
 </tbody>
 </table>
+<p>Encode this in your workflow engine as filters and branches. If you're on a platform with native cancellation flows, some of it lives there instead.</p>
+<h3 id="step-4-execute-the-refund">Step 4: Execute the refund</h3>
+<p>The refund call goes to your payment gateway. In Stripe that's a refund against the charge or payment intent; in Chargebee and Recurly it's a credit note plus a refund or credit; in Paddle the merchant of record handles it for you.</p>
+<p>Two things to get right here. First, decide refund-to-original-payment-method versus account credit — most gateways default to the original method, and switching to credit is a separate action. Second, know that most gateways do not return the original processing fee when you refund. On a $100 refund through Stripe at 2.9% + 30¢, you're out the $3.20 regardless. Build that into your margin math.</p>
+<h3 id="step-5-cancel-the-subscription">Step 5: Cancel the subscription</h3>
+<p>A refund without a cancellation is a future chargeback. If the customer is on a recurring plan, cancel it in the same workflow — immediately for full refunds, or at period end if they've paid through a date they're entitled to use.</p>
+<p>Watch the proration setting. Immediate cancellation with proration can trigger a second, smaller refund or a credit you didn't intend. Decide the behavior explicitly in your policy and match it in the platform.</p>
+<h3 id="step-6-revoke-access">Step 6: Revoke access</h3>
+<p>This is the step people forget. Cancelling the subscription doesn't remove the customer from your course platform, your SaaS app, your Slack community, or your license server. Automation should call each system's API to downgrade or deactivate the account.</p>
+<p>A webhook listener is the cleanest pattern. Your billing platform fires <code>subscription.cancelled</code>, and a small endpoint (or a Zapier/<a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> webhook) fans out to the other systems. Here's the shape of it:</p>
+<pre><code>{
+<p>"event": "subscription.cancelled",</p>
+<p>"customer_id": "cus_abc123",</p>
+<p>"email": "jane@example.com",</p>
+<p>"canceled_at": "2026-10-26T14:02:00Z",</p>
+<p>"refund_issued": true,</p>
+<p>"refund_amount": 4900</p>
+<p>}</p>
+<p></code></pre></p>
+<p>Your handler then calls your app's deprovisioning endpoint, removes the user from the course roster, and updates the CRM. If any call fails, alert yourself — a silent failure here means someone keeps free access for months.</p>
+<h3 id="step-7-notify-and-log">Step 7: Notify and log</h3>
+<p>Send the customer a confirmation with the refund amount, the expected timeline (card refunds typically take 5–10 business days to appear), and the cancellation effective date. Send yourself or your finance channel a summary. Write the whole event to a log — Airtable, a Google Sheet, or your accounting system.</p>
+<p>If you use QuickBooks or Xero, create a credit note or refund record so the books match reality. Doing this manually at month-end is where billing operations quietly fall apart.</p>
+<h3 id="step-8-handle-the-exceptions">Step 8: Handle the exceptions</h3>
+<p>The automated path should cover 70–80% of requests. The rest need a human: partial refunds on annual plans, disputes, customers who've already filed a chargeback (refunding on top of a chargeback means you lose twice), and anyone asking for something your policy</p>
             <div class="affiliate-cta">
     <p>🔍 Want the best deal? Check current prices and availability.</p>
     <a href="https://automatecompare.com/#deals" class="cta-btn">Compare Prices →</a>
@@ -208,17 +215,17 @@
     <div class="toc">
         <h4>On This Page</h4>
         <a href="#how-to-set-up-automated-refund-and-cancellation-processing" class="toc-h2" style="padding-left:0px">How to Set Up Automated Refund and Cancellation Processing</a>
-<a href="#what-counts-as-refund-and-cancellation-processing" class="toc-h2" style="padding-left:0px">What counts as "refund and cancellation processing"</a>
-<a href="#the-five-stages-of-an-automated-flow" class="toc-h2" style="padding-left:0px">The five stages of an automated flow</a>
-<a href="#feature-breakdown-what-the-tools-actually-give-you" class="toc-h2" style="padding-left:0px">Feature breakdown: what the tools actually give you</a>
-<a href="#stripe-billing" class="toc-h3" style="padding-left:8px">Stripe Billing</a>
-<a href="#chargebee" class="toc-h3" style="padding-left:8px">Chargebee</a>
-<a href="#recurly" class="toc-h3" style="padding-left:8px">Recurly</a>
-<a href="#paddle" class="toc-h3" style="padding-left:8px">Paddle</a>
-<a href="#zapier-and-make" class="toc-h3" style="padding-left:8px">Zapier and Make</a>
-<a href="#helpdesks-gorgias-and-zendesk" class="toc-h3" style="padding-left:8px">Helpdesks: Gorgias and Zendesk</a>
-<a href="#shopify-flow" class="toc-h3" style="padding-left:8px">Shopify Flow</a>
-<a href="#comparison-table" class="toc-h2" style="padding-left:0px">Comparison table</a>
+<a href="#first-decide-what-automated-means-for-you" class="toc-h2" style="padding-left:0px">First, decide what "automated" means for you</a>
+<a href="#prerequisites-the-boring-stuff-that-determines-whether-this-works" class="toc-h2" style="padding-left:0px">Prerequisites: the boring stuff that determines whether this works</a>
+<a href="#the-eight-step-workflow" class="toc-h2" style="padding-left:0px">The eight-step workflow</a>
+<a href="#step-1-capture-every-request-in-one-place" class="toc-h3" style="padding-left:8px">Step 1: Capture every request in one place</a>
+<a href="#step-2-verify-identity-and-locate-the-transaction" class="toc-h3" style="padding-left:8px">Step 2: Verify identity and locate the transaction</a>
+<a href="#step-3-apply-the-policy-engine" class="toc-h3" style="padding-left:8px">Step 3: Apply the policy engine</a>
+<a href="#step-4-execute-the-refund" class="toc-h3" style="padding-left:8px">Step 4: Execute the refund</a>
+<a href="#step-5-cancel-the-subscription" class="toc-h3" style="padding-left:8px">Step 5: Cancel the subscription</a>
+<a href="#step-6-revoke-access" class="toc-h3" style="padding-left:8px">Step 6: Revoke access</a>
+<a href="#step-7-notify-and-log" class="toc-h3" style="padding-left:8px">Step 7: Notify and log</a>
+<a href="#step-8-handle-the-exceptions" class="toc-h3" style="padding-left:8px">Step 8: Handle the exceptions</a>
     </div>
 </aside>
 </article>
