@@ -148,7 +148,7 @@
 <p>A refund without a cancellation is a future chargeback. If the customer is on a recurring plan, cancel it in the same workflow — immediately for full refunds, or at period end if they've paid through a date they're entitled to use.</p>
 <p>Watch the proration setting. Immediate cancellation with proration can trigger a second, smaller refund or a credit you didn't intend. Decide the behavior explicitly in your policy and match it in the platform.</p>
 <h3 id="step-6-revoke-access">Step 6: Revoke access</h3>
-<p>This is the step people forget. Cancelling the subscription doesn't remove the customer from your course platform, your SaaS app, your <a href="https://slack.pxf.io/c/7203256/3887205/52501" rel="nofollow sponsored">Slack</a> community, or your license server. Automation should call each system's API to downgrade or deactivate the account.</p>
+<p>This is the step people forget. Cancelling the subscription doesn't remove the customer from your course platform, your SaaS app, your <a href="https://slack.pxf.io/c/7203256/3887205/52501?subId1=automatecompare" rel="nofollow sponsored">Slack</a> community, or your license server. Automation should call each system's API to downgrade or deactivate the account.</p>
 <p>A webhook listener is the cleanest pattern. Your billing platform fires <code>subscription.cancelled</code>, and a small endpoint (or a Zapier/<a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> webhook) fans out to the other systems. Here's the shape of it:</p>
 <pre><code>{
 <p>"event": "subscription.cancelled",</p>
