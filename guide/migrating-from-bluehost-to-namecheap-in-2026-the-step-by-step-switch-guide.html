@@ -75,6 +75,43 @@
           "item": "https://automatecompare.com/guide/migrating-from-bluehost-to-namecheap-in-2026-the-step-by-step-switch-guide"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is Namecheap's Stellar plan big enough for a small WordPress site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a typical small business site: yes - 20 GB SSD and 3 websites on Stellar. Heavy media sites should start at Stellar Plus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the two-year cost compare?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On our published rates: Namecheap Stellar ~$1.98/mo is about $47.52 over 24 months, renewing ~$4.48/mo. Bluehost Basic is ~$2.95/mo (~$70.80 over 24 months, 36-month intro), renewing ~$10.99/mo. Confirm current prices at checkout - promos change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to transfer my domain to Namecheap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You can leave it at Bluehost and just point DNS at Namecheap hosting. Transferring consolidates billing and usually adds a year of registration."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my email move automatically?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mailboxes ride along in a full cPanel backup, but verify MX records and send test messages both ways before you cancel Bluehost."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -175,13 +212,13 @@ if(b){b.addEventListener('click',calc)}
 <h2 id="post-migration-verification">Post-Migration Verification</h2>
 <p>Check email flow (mailbox recreation + MX records), SSL coverage, and cron jobs (cPanel crons sometimes need re-pointing after restore). Run a speed test - Namecheap's entry tier is budget hardware, so watch TTFB if your site is heavy.</p>
 <h2 id="faq">FAQ</h2>
-<p>Q: Is Namecheap's Stellar plan big enough for a small WordPress site?</p>
+<p><strong>Q: Is Namecheap's Stellar plan big enough for a small WordPress site?</strong></p>
 <p>A: For a typical small business site: yes - 20 GB SSD and 3 websites on Stellar. Heavy media sites should start at Stellar Plus.</p>
-<p>Q: How does the two-year cost compare?</p>
+<p><strong>Q: How does the two-year cost compare?</strong></p>
 <p>A: On our published rates: Namecheap Stellar ~$1.98/mo is about $47.52 over 24 months, renewing ~$4.48/mo. Bluehost Basic is ~$2.95/mo (~$70.80 over 24 months, 36-month intro), renewing ~$10.99/mo. Confirm current prices at checkout - promos change.</p>
-<p>Q: Do I have to transfer my domain to Namecheap?</p>
+<p><strong>Q: Do I have to transfer my domain to Namecheap?</strong></p>
 <p>A: No. You can leave it at Bluehost and just point DNS at Namecheap hosting. Transferring consolidates billing and usually adds a year of registration.</p>
-<p>Q: Will my email move automatically?</p>
+<p><strong>Q: Will my email move automatically?</strong></p>
 <p>A: Mailboxes ride along in a full cPanel backup, but verify MX records and send test messages both ways before you cancel Bluehost.</p>
 <h2 id="the-2-year-renewal-math">The 2-Year Renewal Math (Rates as of November 2026)</h2>
 <table class="price-table">

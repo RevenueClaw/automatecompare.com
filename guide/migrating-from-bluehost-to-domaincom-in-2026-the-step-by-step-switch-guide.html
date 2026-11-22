@@ -75,6 +75,43 @@
           "item": "https://automatecompare.com/guide/migrating-from-bluehost-to-domaincom-in-2026-the-step-by-step-switch-guide"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I migrate my domain to Domain.com too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes - unlock it at Bluehost/FASTDOMAIN, grab the EPP code, and start the transfer at Domain.com. Transfers add a year of registration; don't transfer within 60 days of a registration or prior transfer (registry lock)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much will hosting cost over two years?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "On our published rates: Bluehost Basic ~$2.95/mo means about $70.80 over 24 months (still inside the 36-month intro), renewing ~$11.99/mo after. Domain.com Basic is ~$3.75/mo (~$90.00 over 24 months), renewing ~$10.99/mo. Year two prices converge; the renewal rates decide years three onward."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my site go down during the move?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not if you stage first and lower TTLs - with the site fully tested on the new host, the DNS flip is minutes and old caches cover stragglers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to move my email hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mailboxes tied to Bluehost either move (recreate them on the new host and migrate mail) or stay put if you use third-party email. Recreate forwarding rules manually - they don't transfer."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -175,13 +212,13 @@ if(b){b.addEventListener('click',calc)}
 <h2 id="post-migration-verification">Post-Migration Verification</h2>
 <p>Watch uptime and email deliverability for a week (mail exchangers can be slow to re-learn new IPs), confirm SSL reissued on the new host, and keep your Bluehost backup on local storage for a month before deleting anything.</p>
 <h2 id="faq">FAQ</h2>
-<p>Q: Can I migrate my domain to Domain.com too?</p>
+<p><strong>Q: Can I migrate my domain to Domain.com too?</strong></p>
 <p>A: Yes - unlock it at Bluehost/FASTDOMAIN, grab the EPP code, and start the transfer at Domain.com. Transfers add a year of registration; don't transfer within 60 days of a registration or prior transfer (registry lock).</p>
-<p>Q: How much will hosting cost over two years?</p>
+<p><strong>Q: How much will hosting cost over two years?</strong></p>
 <p>A: On our published rates: Bluehost Basic ~$2.95/mo means about $70.80 over 24 months (still inside the 36-month intro), renewing ~$11.99/mo after. Domain.com Basic is ~$3.75/mo (~$90.00 over 24 months), renewing ~$10.99/mo. Year two prices converge; the renewal rates decide years three onward.</p>
-<p>Q: Will my site go down during the move?</p>
+<p><strong>Q: Will my site go down during the move?</strong></p>
 <p>A: Not if you stage first and lower TTLs - with the site fully tested on the new host, the DNS flip is minutes and old caches cover stragglers.</p>
-<p>Q: Do I need to move my email hosting?</p>
+<p><strong>Q: Do I need to move my email hosting?</strong></p>
 <p>A: Mailboxes tied to Bluehost either move (recreate them on the new host and migrate mail) or stay put if you use third-party email. Recreate forwarding rules manually - they don't transfer.</p>
 <h2 id="the-2-year-renewal-math">The 2-Year Renewal Math (Rates as of November 2026)</h2>
 <table class="price-table">

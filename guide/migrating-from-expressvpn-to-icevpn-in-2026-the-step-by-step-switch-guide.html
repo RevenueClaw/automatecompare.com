@@ -75,6 +75,43 @@
           "item": "https://automatecompare.com/guide/migrating-from-expressvpn-to-icevpn-in-2026-the-step-by-step-switch-guide"
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I get a refund from ExpressVPN when I switch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ExpressVPN's 30-day money-back guarantee applies to new and recently renewed subscriptions - request it from your account dashboard within the window."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will switching VPNs affect my streaming or banking logins?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Expect one-time re-verifications: services that whitelist your old VPN IP will ask you to confirm again under the new provider. Banking apps generally just trigger a security check."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is IceVPN actually cheaper over two years?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IceVPN's published 2-year rate is $59.76 versus about $66.96 pro-rated over the same 24 months on ExpressVPN's verified $78.12/28-month Basic bundle - and the renewal rates (~$47.88/year vs $99.95/year) widen the gap. Confirm current prices at checkout; both vendors run frequent promos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to reinstall anything on my router?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If ExpressVPN ran at the router level, yes - either load IceVPN's OpenVPN/WireGuard config or revert the router and use device-level apps."
+          }
+        }
+      ]
     }
   ]
 }</script>
@@ -175,13 +212,13 @@ if(b){b.addEventListener('click',calc)}
 <h2 id="post-migration-verification">Post-Migration Verification</h2>
 <p>A week in: check leak tests on every network you use, confirm the kill switch actually drops traffic when the tunnel breaks, and verify no device silently fell back to ExpressVPN (leftover configs cause split-brain routing).</p>
 <h2 id="faq">FAQ</h2>
-<p>Q: Can I get a refund from ExpressVPN when I switch?</p>
+<p><strong>Q: Can I get a refund from ExpressVPN when I switch?</strong></p>
 <p>A: ExpressVPN's 30-day money-back guarantee applies to new and recently renewed subscriptions - request it from your account dashboard within the window.</p>
-<p>Q: Will switching VPNs affect my streaming or banking logins?</p>
+<p><strong>Q: Will switching VPNs affect my streaming or banking logins?</strong></p>
 <p>A: Expect one-time re-verifications: services that whitelist your old VPN IP will ask you to confirm again under the new provider. Banking apps generally just trigger a security check.</p>
-<p>Q: Is IceVPN actually cheaper over two years?</p>
+<p><strong>Q: Is IceVPN actually cheaper over two years?</strong></p>
 <p>A: IceVPN's published 2-year rate is $59.76 versus about $66.96 pro-rated over the same 24 months on ExpressVPN's verified $78.12/28-month Basic bundle - and the renewal rates (~$47.88/year vs $99.95/year) widen the gap. Confirm current prices at checkout; both vendors run frequent promos.</p>
-<p>Q: Do I need to reinstall anything on my router?</p>
+<p><strong>Q: Do I need to reinstall anything on my router?</strong></p>
 <p>A: If ExpressVPN ran at the router level, yes - either load IceVPN's OpenVPN/WireGuard config or revert the router and use device-level apps.</p>
 <h2 id="the-2-year-renewal-math">The 2-Year Renewal Math (Verified November 2026)</h2>
 <table class="price-table">
