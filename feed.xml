@@ -5,7 +5,14 @@
     <link>https://automatecompare.com/</link>
     <atom:link href='https://automatecompare.com/feed.xml' rel='self' type='application/rss+xml' xmlns:atom='http://www.w3.org/2005/Atom'/>
     <description>Find the right automation tools for your business</description>
-    <lastBuildDate>Sun, 22 Nov 2026 21:16:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 06:06:51 +0000</lastBuildDate>
+    <item>
+      <title>How to Build a Client Onboarding Workflow That Runs Itself</title>
+      <link>https://automatecompare.com/tutorial/build-client-onboarding-workflow-runs-itself</link>
+      <guid isPermaLink='true'>https://automatecompare.com/tutorial/build-client-onboarding-workflow-runs-itself</guid>
+      <description>Build a client onboarding workflow that runs itself: intake forms, contracts, invoices, kickoff calls, and follow-ups wired together. Tool picks and real prices.</description>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>7 Best Payment Processing Platforms for E-Commerce in 2026</title>
       <link>https://automatecompare.com/best_of/7-best-payment-processing-platforms-e-commerce</link>
@@ -271,13 +278,6 @@
       <guid isPermaLink='true'>https://automatecompare.com/comparison/dubsado-vs-honeybook-vs-17hats-best-client-management-suite</guid>
       <description>Dubsado vs HoneyBook vs 17hats compared on price, automation, invoicing, portals and scheduling. Honest pros, cons and a clear winner for small businesses.</description>
       <pubDate>Wed, 04 Nov 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>How to Build a Client Onboarding Workflow That Runs Itself</title>
-      <link>https://automatecompare.com/tutorial/build-client-onboarding-workflow-runs-itself</link>
-      <guid isPermaLink='true'>https://automatecompare.com/tutorial/build-client-onboarding-workflow-runs-itself</guid>
-      <description>Build a client onboarding automation that sends contracts, collects info, invoices, and kicks off delivery — without you touching a thing. Tools, prices, and a verdict.</description>
-      <pubDate>Tue, 03 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>Stripe vs PayPal vs Square: Best Payment Processor for Small Business in 2026</title>

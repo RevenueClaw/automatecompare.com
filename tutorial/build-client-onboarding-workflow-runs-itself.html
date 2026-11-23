@@ -9,8 +9,8 @@
     <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
 
     <title>How to Build a Client Onboarding Workflow That Runs Itself | Automate Compare</title>
-    <meta name="description" content="Build a client onboarding automation that sends contracts, collects info, invoices, and kicks off delivery — without you touching a thing. Tools, prices, and a ">
-    <meta name="keywords" content="client onboarding automation, workflow automation, business processes, zapier vs make, client onboarding checklist, dubsado vs honeybook">
+    <meta name="description" content="Build a client onboarding workflow that runs itself: intake forms, contracts, invoices, kickoff calls, and follow-ups wired together. Tool picks and real prices">
+    <meta name="keywords" content="client onboarding automation, workflow automation, business processes, onboarding workflow, automate client intake, client onboarding tools">
         <meta name="impact-site-verification" value="72e78125-83d8-4a51-b7db-e3ad7e2be67b">
     <link rel="canonical" href="https://automatecompare.com/tutorial/build-client-onboarding-workflow-runs-itself">
     <link rel="stylesheet" href="/style.css?v=20261122b">
@@ -36,9 +36,9 @@
     {
       "@type": "Article",
       "headline": "How to Build a Client Onboarding Workflow That Runs Itself",
-      "description": "Build a client onboarding automation that sends contracts, collects info, invoices, and kicks off delivery \u2014 without you touching a thing. Tools, prices, and a verdict.",
-      "datePublished": "2026-11-03",
-      "dateModified": "2026-11-03",
+      "description": "Build a client onboarding workflow that runs itself: intake forms, contracts, invoices, kickoff calls, and follow-ups wired together. Tool picks and real prices.",
+      "datePublished": "2026-11-23",
+      "dateModified": "2026-11-23",
       "author": {
         "@type": "Person",
         "name": "Editorial Team"
@@ -73,35 +73,6 @@
           "position": 3,
           "name": "How to Build a Client Onboarding Workflow That Runs Itself",
           "item": "https://automatecompare.com/tutorial/build-client-onboarding-workflow-runs-itself"
-        }
-      ]
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How long does it take to build a client onboarding automation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A basic version \u2014 trigger, contract, invoice, welcome email \u2014 takes about four hours if you already know your tools. The full five-stage build with a project template and a follow-up sequence runs closer to a full day, spread over a couple of sessions. Budget extra time for testing, which always takes longer than building."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do I need Zapier and Make?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No. Pick one. They do the same job with different tradeoffs \u2014 Zapier is easier and has more integrations, Make is cheaper and handles complex logic better. Running both is a recipe for confusion."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What's the most common mistake in onboarding automation?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Automating the happy path only. What happens when the client doesn't sign? When the card declines? When they submit"
-          }
         }
       ]
     }
@@ -140,9 +111,9 @@
             <h1>How to Build a Client Onboarding Workflow That Runs Itself</h1>
             <div class="meta-row">
                 <span class="badge badge-tutorial">Tutorial</span>
-                <time datetime="2026-11-03">November 03, 2026</time>
+                <time datetime="2026-11-23">November 23, 2026</time>
                 <span>·</span>
-                <span class="reading-time">11 min read</span>
+                <span class="reading-time">6 min read</span>
                 <span class="affiliate-tag">🔄 Affiliate Links</span>
             </div>
         </header>
@@ -154,132 +125,58 @@
 </div>
             <p><em>When you buy through links on our site, we may earn a commission.</em></p>
 <h2 id="how-to-build-a-client-onboarding-workflow-that-runs-itself">How to Build a Client Onboarding Workflow That Runs Itself</h2>
-<p>Onboarding is where small businesses quietly lose money. Not in a dramatic way — nobody sends you an angry email about it. It just leaks. The signed contract sits in an inbox for two days. The intake form goes out late. You forget to ask for the brand assets until the project is already underway. The kickoff call gets scheduled twice because two different tools sent two different links.</p>
-<p>None of that is hard work. It's just <em>work</em> — the kind that eats 45 minutes here and an hour there, and always at the worst possible moment, like when you're trying to actually deliver the thing the client paid for.</p>
-<p>This guide walks through building a client onboarding workflow that fires off on its own. I'll cover the five stages every onboarding process needs, which tools handle each one well, what they cost, and where each approach falls apart. Then I'll tell you which one I'd actually pick.</p>
+<p>The first 48 hours after a client says yes are the most fragile part of any service business. They've handed you money or a signature, and now they're waiting. If your next move is "I'll send the paperwork tonight," you've already started the relationship with a small apology.</p>
+<p>I've watched this play out in agencies, consultancies, and one-person shops. The work itself is fine. It's the handoff that leaks — forgotten contracts, invoices sent three days late, kickoff calls booked twice, a new client sitting in a shared drive with no idea where anything is.</p>
+<p>This tutorial walks through building an onboarding workflow that handles that handoff without you. Not "mostly automated" with you babysitting it. Actually hands-off, with a clear owner for every step and a fallback when something breaks.</p>
+<p>One honest note before we start: nothing runs 100% by itself. What you're building is a workflow where <em>you touch it once</em> — at the moment of sale — and everything after that fires on its own. That's the realistic target, and it's achievable in a weekend.</p>
 <hr>
-<h2 id="first-understand-what-you-re-automating">First, understand what you're automating</h2>
-<p>Before you touch a single Zap, map the process on paper. A client onboarding automation is really five distinct stages, and each one fails for a different reason:</p>
+<h2 id="what-runs-itself-actually-means">What "runs itself" actually means</h2>
+<p>Before picking tools, get clear on the six stages every client onboarding workflow has. Yours might merge a couple, but nothing should be missing.</p>
 <ul>
-<li><strong>The trigger</strong> — the moment a client says yes. Usually a signed proposal, a paid deposit, or a form submission.</li>
-<li><strong>The paperwork</strong> — contract signature, terms, deposit invoice.</li>
-<li><strong>The information grab</strong> — intake questionnaire, brand assets, logins, access to their accounts.</li>
-<li><strong>The handoff to delivery</strong> — project created, kickoff call booked, internal team notified.</li>
-<li><strong>The follow-through</strong> — welcome email sequence, expectations setting, check-in reminders.</li>
+<li><strong>Trigger</strong> — the moment a client commits. A signed proposal, a paid deposit, a form submission. This is the single event that starts everything else.</li>
+<li><strong>Intake</strong> — collecting the details you need to actually do the work: brand assets, logins, goals, contacts, deadlines.</li>
+<li><strong>Agreement and payment</strong> — contract signed, deposit collected. Ideally these happen together, not as two separate chases.</li>
+<li><strong>Kickoff</strong> — scheduling the first call, sending the calendar invite, and the reminder sequence that stops no-shows.</li>
+<li><strong>Access and handoff</strong> — the client portal, folder, <a href="https://slack.pxf.io/c/7203256/3887205/52501?subId1=automatecompare&subId2=buildclientonboardingworkflowrunsitself" rel="nofollow sponsored">Slack</a> channel, or project board gets created and populated, and your team gets notified.</li>
+<li><strong>The first 30 days</strong> — welcome sequence, expectation setting, check-in at day 7 and day 21, and a request for feedback at the end.</li>
 </ul>
-<p>Most people try to automate all five at once and end up with a spaghetti of 14 Zaps that break every other week. Build it in order. Stage one through stage three alone will save you the majority of the time.</p>
-<p>One more thing before we start: pick your trigger carefully. "Client paid deposit" is a better trigger than "client signed contract," because a signed contract doesn't mean you've been paid, and you don't want to start work on a promise. If you require a deposit, trigger on the money.</p>
+<p>Most people automate stage 2 and stop. The real time savings live in stages 3 through 6, because those are the ones that generate follow-up emails and "just checking in" messages.</p>
 <hr>
-<h2 id="stage-1-the-trigger-and-the-contract">Stage 1: The trigger and the contract</h2>
-<p>Your trigger tool needs to do two jobs: capture the "yes," and get a signature on something legally binding.</p>
-<p><strong>For proposals and e-signature,</strong> the two realistic options for a small business are <a href="https://www.pandadoc.com" rel="nofollow sponsored">PandaDoc</a> and <a href="https://www.ignitionapp.com" rel="nofollow sponsored">Ignition</a>. PandaDoc starts around $35/user/month and is a general-purpose document tool — proposals, contracts, quotes, all with e-signature and a decent template library. It's flexible and it plays nicely with Zapier and <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a>.</p>
-<p>Ignition is the more interesting pick if you sell fixed-scope services. It bundles the proposal, the engagement letter, and the recurring payment schedule into one flow, so a client signs and their card gets charged in the same action. That solves the "signed but never paid" problem at the root. Pricing starts around $99/month billed annually, which stings for a solo operator but often pays for itself in one recovered late payment.</p>
-<p>If you're on a budget, <a href="https://tally.so" rel="nofollow sponsored">Tally</a> (free, or $29/month for Pro) plus a DocuSign or PandaDoc free tier will get you a workable version of this stage. It's more moving parts, but the cost is close to zero.</p>
-<p><strong>The automation bit:</strong> when the signature event fires, the tool sends a webhook. That webhook is your starting gun. Everything downstream keys off it.</p>
+<h2 id="step-1-pick-your-trigger-and-your-hub">Step 1: Pick your trigger and your hub</h2>
+<p>Every workflow needs one source of truth. Two options:</p>
+<p><strong>Option A — an all-in-one client platform.</strong> Dubsado, HoneyBook, or similar. Contracts, invoices, forms, scheduling, and a client portal live in one place. The trigger is a signed contract or paid invoice inside the tool.</p>
+<p><strong>Option B — a modular stack.</strong> A database (Airtable or Notion) as the hub, plus an automation layer (Zapier, <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a>, or n8n) connecting your form, e-signature, invoicing, and calendar tools.</p>
+<p>Option A gets you running in a day. Option B bends to whatever weird process you already have. I'll cover both, but pick one now — hybrid setups where half the data lives in Dubsado and half in Airtable are where onboarding workflows go to die.</p>
+<p>If you're a solo operator billing under ~$200k/year, Option A is almost always the right call. The maintenance cost of a modular stack is real, and it's paid in the currency you have least of: attention.</p>
 <hr>
-<h2 id="stage-2-collecting-client-information-without-the-chase">Stage 2: Collecting client information without the chase</h2>
-<p>This is the stage people underestimate. A client who's excited on Monday will go quiet by Thursday, and your project stalls while you send "just bumping this up!" emails.</p>
-<p>Two approaches work here.</p>
-<p><strong>Option A: a form plus cloud folder.</strong> <a href="https://www.typeform.com" rel="nofollow sponsored">Typeform</a> (Basic is $25/month) or Tally collects structured answers, then automation creates a Google Drive or Dropbox folder from a template and shares it with the client's email. Simple, cheap, and you own the data. The downside is that forms are one-and-done — clients fill them out, forget half the answers, and there's no polite way to nag them.</p>
-<p><strong>Option B: a dedicated client-request tool.</strong> <a href="https://contentsnare.com" rel="nofollow sponsored">Content Snare</a> (from $29/month) exists specifically for this. You build a request list — logo files, brand guide, social logins, tax ID — and it emails the client a link with a progress bar and automatic reminders until every item is ticked off. It's unglamorous software that solves an unglamorous problem, and if you onboard more than about five clients a month, the reminder automation alone justifies the price.</p>
-<p>There's also a third path: if you're already using an all-in-one platform like Dubsado or HoneyBook, the intake form lives inside the tool and feeds directly into the project. Less flexible, but fewer integrations to maintain.</p>
-<hr>
-<h2 id="stage-3-invoicing-and-payment">Stage 3: Invoicing and payment</h2>
-<p>Don't overthink this. Use whatever your accounting stack already supports — Stripe, QuickBooks, Xero, or the invoicing built into your all-in-one.</p>
-<p>The automation rule that matters: <strong>the invoice should be generated by the trigger, not by you remembering.</strong> When the contract signature webhook fires, your automation creates the deposit invoice with a due date and sends it. If it's unpaid after seven days, a second automation sends a reminder. After fourteen, it notifies you personally.</p>
-<p>That three-step sequence — send, remind, escalate — is the single highest-ROI automation in this entire guide. It's also the one people skip because it feels awkward to automate a request for money. Automate it anyway. The client isn't offended by a system-generated reminder; they're relieved they didn't have to remember either.</p>
-<hr>
-<h2 id="stage-4-the-handoff-to-delivery">Stage 4: The handoff to delivery</h2>
-<p>This is where automation stops saving you time and starts saving you <em>embarrassment</em>. Nothing erodes trust faster than a client signing a contract and then hearing nothing for four days.</p>
-<p>What needs to happen the moment payment clears:</p>
+<h2 id="step-2-build-an-intake-form-that-feeds-everything-else">Step 2: Build an intake form that feeds everything else</h2>
+<p>Your intake form is the input for every downstream step. Get it wrong and you'll be re-asking for the same logo file in week three.</p>
+<p>Use a form tool that supports conditional logic and file uploads. Tally is free for unlimited responses and handles logic well; Typeform is prettier but costs more once you pass 10 responses a month. If you're on Dubsado or HoneyBook, use the built-in form so the answers land directly on the client record.</p>
+<p>What to include:</p>
 <ul>
-<li>A project gets created in your project management tool, from a template, with the right tasks and deadlines</li>
-<li>A kickoff call gets booked — <a href="https://calendly.com" rel="nofollow sponsored">Calendly</a> (free, or $10/seat/month for Standard) with a booking link that only appears after payment</li>
-<li>Your team (or your contractor, or just you) gets a notification with the client's intake answers attached</li>
-<li>The client gets a welcome email with next steps and what to expect</li>
+<li><strong>Contact details</strong> — name, role, email, phone, timezone. Timezone matters more than you think.</li>
+<li><strong>Billing contact</strong> — often a different person than your day-to-day contact. Ask.</li>
+<li><strong>Project scope confirmation</strong> — a short recap of what they bought. This prevents the "I thought that was included" conversation.</li>
+<li><strong>Asset upload</strong> — logo files, brand guidelines, existing content. <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> it a required field.</li>
+<li><strong>Access checklist</strong> — which accounts you'll need. Don't ask for passwords in a form; ask which accounts exist and send a secure invite later.</li>
+<li><strong>Goals in their words</strong> — one open text field. This is the single most useful input for your kickoff call.</li>
 </ul>
-<p>The project-template step is the one people miss. If your automation creates an empty project called "Acme Corp," you've saved yourself eight seconds. If it creates a project with 14 pre-written tasks, assigned owners, and relative due dates, you've saved yourself an hour.</p>
-<p><strong>Airtable</strong> is genuinely good at this. A base with a Clients table, a Projects table, and a Tasks table, linked together — when a new client record appears, an Airtable automation spins up the linked project and task records from a template. Airtable Team runs $20/user/month billed annually; the free tier caps automations at 100 runs/month, which is fine for testing but not for production.</p>
+<p><strong>Pro move:</strong> add a hidden field that captures the form submission date and the lead source. When you review your onboarding six months from now, you'll want to know whether referral clients churn less than cold leads. That's a business process insight you can only get if you collect it from day one.</p>
 <hr>
-<h2 id="stage-5-the-follow-through-sequence">Stage 5: The follow-through sequence</h2>
-<p>The last stage is the easiest to build and the easiest to forget. Once the client is onboarded, they need to hear from you on a predictable rhythm, or they'll start wondering if they made a mistake.</p>
-<p>A simple three-email sequence, sent from your email tool on a delay:</p>
-<ul>
-<li><strong>Day 1:</strong> Welcome, what happens next, who to contact</li>
-<li><strong>Day 7:</strong> Check-in — "here's where we are, here's what I need from you"</li>
-<li><strong>Day 30:</strong> A short satisfaction question and a referral ask</li>
-</ul>
-<p>You can build this in your CRM, in Mailchimp, or with a delay step in your automation platform. Total build time: about 40 minutes. Total ongoing effort: zero.</p>
+<h2 id="step-3-combine-the-contract-and-the-invoice">Step 3: Combine the contract and the invoice</h2>
+<p>This is the step people most often skip, and it's the one that costs the most time. Sending a contract, waiting, then sending an invoice, then waiting again, adds days to every onboarding.</p>
+<p>Do this instead: send a proposal document with the agreement and a payment link on the same page. PandaDoc does this well — you can build a template with a signature block and a Stripe payment link in the same document. DocuSign is the safer choice if your clients are enterprise and expect it, but you'll need to bolt on invoicing separately.</p>
+<p>In Dubsado, this is a single workflow: send the proposal, and the contract plus first invoice go out together. HoneyBook works similarly. The client signs and pays in one sitting, and your trigger fires.</p>
+<p><strong>Set the trigger to "contract signed AND deposit paid," not "either one."</strong> You'd be surprised how many people sign and then vanish for a week. Requiring both means your kickoff call only gets scheduled for clients who've actually committed money.</p>
 <hr>
-<h2 id="the-comparison-table">The comparison table</h2>
-<p>Here's how the main tools stack up. Prices are the entry-level paid tier as of this writing — always check current pricing, because automation platforms change their plans more often than they change their features.</p>
-<table class="price-table">
-<thead><tr><th>Tool</th><th>Best for</th><th>Starting price</th><th>Free tier?</th><th>Learning curve</th></tr></thead>
-<tbody>
-<tr><td><a href="https://zapier.com" rel="nofollow sponsored">Zapier</a></td><td>Connecting apps without code</td><td>~$19.99/mo (annual)</td><td>Yes, 100 tasks/mo</td><td>Low</td></tr>
-<tr><td><a href="https://www.make.com" rel="nofollow sponsored">Make</a></td><td>Complex multi-step logic on a budget</td><td>~$9/mo (annual)</td><td>Yes, 1,000 ops/mo</td><td>Medium</td></tr>
-<tr><td><a href="https://airtable.com" rel="nofollow sponsored">Airtable</a></td><td>Being the database everything points at</td><td>~$20/user/mo (annual)</td><td>Yes, limited automations</td><td>Medium</td></tr>
-<tr><td><a href="https://www.dubsado.com" rel="nofollow sponsored">Dubsado</a></td><td>All-in-one for service businesses</td><td>~$20/mo (annual)</td><td>No (trial only)</td><td>Medium</td></tr>
-<tr><td><a href="https://www.honeybook.com" rel="nofollow sponsored">HoneyBook</a></td><td>All-in-one, client-facing polish</td><td>~$19/mo</td><td>No (trial only)</td><td>Low</td></tr>
-<tr><td><a href="https://www.ignitionapp.com" rel="nofollow sponsored">Ignition</a></td><td>Proposals + recurring payments</td><td>~$99/mo (annual)</td><td>No (trial only)</td><td>Low</td></tr>
-<tr><td><a href="https://contentsnare.com" rel="nofollow sponsored">Content Snare</a></td><td>Chasing client documents</td><td>~$29/mo</td><td>No (trial only)</td><td>Low</td></tr>
-<tr><td><a href="https://calendly.com" rel="nofollow sponsored">Calendly</a></td><td>Kickoff call booking</td><td>~$10/seat/mo</td><td>Yes, 1 event type</td><td>Low</td></tr>
-<tr><td><a href="https://tally.so" rel="nofollow sponsored">Tally</a></td><td>Intake forms</td><td>~$29/mo</td><td>Yes, unlimited forms</td><td>Low</td></tr>
-</tbody>
-</table>
-<hr>
-<h2 id="two-paths-diy-stack-vs-all-in-one">Two paths: DIY stack vs. all-in-one</h2>
-<p>There are really only two architectures worth considering, and the right one depends on how weird your process is.</p>
-<h3 id="path-a-the-diy-stack">Path A: The DIY stack (Zapier or <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> as the hub)</h3>
-<p>You keep your best-in-class tools and use an automation platform to glue them together.</p>
-<p><strong>Pros</strong></p>
+<h2 id="step-4-automate-the-kickoff-call">Step 4: Automate the kickoff call</h2>
+<p>Calendly or SavvyCal, connected to your trigger. When the contract is signed and the deposit clears, the client gets a booking link with a deadline attached: "Pick a time in the next 5 business days."</p>
+<p>Three details that <a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> this work:</p>
 <ul>
-<li>Total flexibility — any app with an API can join the party</li>
-<li>You can swap out one tool without rebuilding everything</li>
-<li>Costs scale down as well as up; a solo operator can run this for under $50/month</li>
-<li>Your data stays in tools you control</li>
+<li><strong>Limit the booking window.</strong> An open-ended link means someone books six weeks out and your project timeline slips before it starts.</li>
+<li><strong>Add a required pre-call form.</strong> Ask two questions: what does success look like in 90 days, and what's the one thing you're worried about. You'll run better kickoff calls.</li>
+<li><strong>Automatic reminders at 24 hours and 1 hour.</strong> Calendly's built-in reminders cover this on paid plans</li>
 </ul>
-<p><strong>Cons</strong></p>
-<ul>
-<li>Every integration is a thing that can break, and you'll be the one fixing it</li>
-<li>Zapier's task-based pricing punishes loops and high-volume polling — a workflow that fires 20 tasks per client gets expensive fast</li>
-<li>No single dashboard; debugging means checking five tools</li>
-<li>You will absolutely spend a Saturday afternoon on a webhook that worked fine yesterday</li>
-</ul>
-<p><a href="https://www.make.com/en/register?pc=shaynesailab" rel="nofollow sponsored">Make</a> is the better value here if you're comfortable with a visual builder that shows you the data structure at each step. It's roughly half the price of Zapier for comparable volume, and its error handling is more granular. Zapier is easier to learn and has more native integrations, which matters if you use something obscure.</p>
-<h3 id="path-b-the-all-in-one">Path B: The all-in-one (Dubsado or HoneyBook)</h3>
-<p>One platform handles the form, the contract, the invoice, the project, and the emails.</p>
-<p><strong>Pros</strong></p>
-<ul>
-<li>One login, one place to look when something goes wrong</li>
-<li>The client experience is consistent — same branding, same portal, same emails</li>
-<li>Setup is fast; you can be live in an afternoon</li>
-<li>No per-task pricing anxiety</li>
-</ul>
-<p><strong>Cons</strong></p>
-<ul>
-<li>Rigid. If your process doesn't match their template, you bend your process, not the tool</li>
-<li>Dubsado's interface feels dated, and its email deliverability has been a recurring complaint in user forums — some users report welcome emails landing in spam</li>
-<li>HoneyBook is polished but its automation logic is shallower than Dubsado's, and it's clearly built with wedding and creative freelancers in mind</li>
-<li>Migrating off either one later is genuinely painful</li>
-</ul>
-<p>My honest read: if you run a photography studio, a design studio, or a coaching practice with a repeatable offer, the all-in-one wins on time-to-value. If your onboarding changes per client — different deliverables, different approvers, different compliance requirements — the DIY stack is the only thing that won't fight you.</p>
-<hr>
-<h2 id="the-verdict">The verdict</h2>
-<p><strong>Build it on Airtable as the source of truth, Make as the automation layer, and Ignition for the money.</strong></p>
-<p>That combination handles the whole five-stage flow without asking you to compromise on any single part. Airtable holds the client record and the project template, so a new client record triggers everything downstream. Make connects the signature webhook, the invoice, the calendar booking, and the welcome sequence at roughly half of Zapier's cost for the same volume. Ignition closes the loop on the "signed but unpaid" problem, which is the most expensive failure mode in the entire process.</p>
-<p>Expected cost: around $130–150/month for a solo operator. That's not nothing. But if onboarding currently eats four hours per client and you take on six clients a month, you're buying back roughly 20 hours — and those hours are the ones you'd otherwise spend chasing paperwork instead of doing billable work.</p>
-<p><strong>If that's too much to start with,</strong> drop Ignition and use Stripe invoices triggered by Make. You'll lose the signed-and-paid-in-one-action flow, but you'll cut the monthly cost to under $50.</p>
-<p><strong>And if you want the simplest possible thing that works:</strong> <a href="https://www.honeybook.com" rel="nofollow sponsored">HoneyBook</a> at $19/month plus a Calendly free account. You'll outgrow it. That's fine. Outgrowing a tool is a better problem than never starting.</p>
-<p>Whatever you pick, build stage one and stage three first. The trigger and the invoice reminder. Those two alone will recover most of the time you're losing right now, and you can add the rest next month.</p>
-<hr>
-<h2 id="faq">FAQ</h2>
-<p><strong>How long does it take to build a client onboarding automation?</strong></p>
-<p>A basic version — trigger, contract, invoice, welcome email — takes about four hours if you already know your tools. The full five-stage build with a project template and a follow-up sequence runs closer to a full day, spread over a couple of sessions. Budget extra time for testing, which always takes longer than building.</p>
-<p><strong>Do I need Zapier <em>and</em> Make?</strong></p>
-<p>No. Pick one. They do the same job with different tradeoffs — Zapier is easier and has more integrations, Make is cheaper and handles complex logic better. Running both is a recipe for confusion.</p>
-<p><strong>What's the most common mistake in onboarding automation?</strong></p>
-<p>Automating the happy path only. What happens when the client doesn't sign? When the card declines? When they submit</p>
             <div class="affiliate-cta">
     <p>🔍 Want the best deal? Check current prices and availability.</p>
     <a href="https://automatecompare.com/#deals" class="cta-btn">Compare Prices →</a>
@@ -332,18 +229,11 @@
     <div class="toc">
         <h4>On This Page</h4>
         <a href="#how-to-build-a-client-onboarding-workflow-that-runs-itself" class="toc-h2" style="padding-left:0px">How to Build a Client Onboarding Workflow That Runs Itself</a>
-<a href="#first-understand-what-you-re-automating" class="toc-h2" style="padding-left:0px">First, understand what you're automating</a>
-<a href="#stage-1-the-trigger-and-the-contract" class="toc-h2" style="padding-left:0px">Stage 1: The trigger and the contract</a>
-<a href="#stage-2-collecting-client-information-without-the-chase" class="toc-h2" style="padding-left:0px">Stage 2: Collecting client information without the chase</a>
-<a href="#stage-3-invoicing-and-payment" class="toc-h2" style="padding-left:0px">Stage 3: Invoicing and payment</a>
-<a href="#stage-4-the-handoff-to-delivery" class="toc-h2" style="padding-left:0px">Stage 4: The handoff to delivery</a>
-<a href="#stage-5-the-follow-through-sequence" class="toc-h2" style="padding-left:0px">Stage 5: The follow-through sequence</a>
-<a href="#the-comparison-table" class="toc-h2" style="padding-left:0px">The comparison table</a>
-<a href="#two-paths-diy-stack-vs-all-in-one" class="toc-h2" style="padding-left:0px">Two paths: DIY stack vs. all-in-one</a>
-<a href="#path-a-the-diy-stack" class="toc-h3" style="padding-left:8px">Path A: The DIY stack</a>
-<a href="#path-b-the-all-in-one" class="toc-h3" style="padding-left:8px">Path B: The all-in-one</a>
-<a href="#the-verdict" class="toc-h2" style="padding-left:0px">The verdict</a>
-<a href="#faq" class="toc-h2" style="padding-left:0px">FAQ</a>
+<a href="#what-runs-itself-actually-means" class="toc-h2" style="padding-left:0px">What "runs itself" actually means</a>
+<a href="#step-1-pick-your-trigger-and-your-hub" class="toc-h2" style="padding-left:0px">Step 1: Pick your trigger and your hub</a>
+<a href="#step-2-build-an-intake-form-that-feeds-everything-else" class="toc-h2" style="padding-left:0px">Step 2: Build an intake form that feeds everything else</a>
+<a href="#step-3-combine-the-contract-and-the-invoice" class="toc-h2" style="padding-left:0px">Step 3: Combine the contract and the invoice</a>
+<a href="#step-4-automate-the-kickoff-call" class="toc-h2" style="padding-left:0px">Step 4: Automate the kickoff call</a>
     </div>
 </aside>
 </article>
