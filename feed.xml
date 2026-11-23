@@ -5,12 +5,19 @@
     <link>https://automatecompare.com/</link>
     <atom:link href='https://automatecompare.com/feed.xml' rel='self' type='application/rss+xml' xmlns:atom='http://www.w3.org/2005/Atom'/>
     <description>Find the right automation tools for your business</description>
-    <lastBuildDate>Mon, 23 Nov 2026 06:06:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 06:17:57 +0000</lastBuildDate>
     <item>
       <title>How to Build a Client Onboarding Workflow That Runs Itself</title>
       <link>https://automatecompare.com/tutorial/build-client-onboarding-workflow-runs-itself</link>
       <guid isPermaLink='true'>https://automatecompare.com/tutorial/build-client-onboarding-workflow-runs-itself</guid>
       <description>Build a client onboarding workflow that runs itself: intake forms, contracts, invoices, kickoff calls, and follow-ups wired together. Tool picks and real prices.</description>
+      <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to Build a Multi-Channel Marketing Automation Workflow</title>
+      <link>https://automatecompare.com/tutorial/build-multi-channel-marketing-automation-workflow</link>
+      <guid isPermaLink='true'>https://automatecompare.com/tutorial/build-multi-channel-marketing-automation-workflow</guid>
+      <description>Build a multi-channel marketing automation workflow linking email, SMS, and ad retargeting — with real prices, a comparison table, and a tested stack.</description>
       <pubDate>Mon, 23 Nov 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
@@ -390,13 +397,6 @@
       <guid isPermaLink='true'>https://automatecompare.com/comparison/zendesk-vs-freshdesk-vs-help-scout-best-customer-support</guid>
       <description>Compare Zendesk, Freshdesk, and Help Scout on pricing, features, and ease of use. Find the best customer support platform for your small business.</description>
       <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>How to Build a Multi-Channel Marketing Automation Workflow</title>
-      <link>https://automatecompare.com/tutorial/build-multi-channel-marketing-automation-workflow</link>
-      <guid isPermaLink='true'>https://automatecompare.com/tutorial/build-multi-channel-marketing-automation-workflow</guid>
-      <description>Learn to connect email, social, and SMS into one automated marketing workflow. Step-by-step guide with tool comparisons and pricing.</description>
-      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
       <title>How to Connect Your CRM to Email Marketing for Lead Nurturing That Actually Works</title>
